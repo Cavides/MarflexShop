@@ -60,6 +60,9 @@ function Register() {
               </div>
           </form>
           
+          {/* No soy un robot */}
+
+          
 
           {/* submit */}
             <button className="reg-form__submit">

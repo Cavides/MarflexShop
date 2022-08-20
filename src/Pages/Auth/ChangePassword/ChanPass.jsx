@@ -28,7 +28,7 @@ function ChanPass() {
     {/* NewPassword */}
     <div className='changePass-form__field'>
           <label htmlFor='password'>
-          <b>Contraseña Nueva</b>
+          <b>Contraseña nueva</b>
             <input className='changePass-form__field-panel' type='password' name='newPass' placeholder="Enter your new password" required/>
             </label>
           </div>

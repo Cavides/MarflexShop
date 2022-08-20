@@ -3,15 +3,16 @@
 // import ChangePass from "./Pages/Auth/ChangePassword/ChanPass";
 // import ForgtPassword from "./Pages/Auth/ForgtPassWord/ForgtPassword";
 // import AuthCode from "./Pages/Auth/ForgtPassWord/AuthCode";
-import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
+// import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
+import Navbar from "./Components/Navbar/Navbar";
 
 
 function App() {
   return (
-    <div> 
-    
-    <NewPassword />
-    
+    <div>
+
+    <Navbar />
+
       </div>
   );
 }

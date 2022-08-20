@@ -23,7 +23,7 @@ function NewPassword() {
     {/* NewPassword */}
     <div className='forgtPassword-form__field'>
           <label htmlFor='password'>
-          <b>Contraseña Nueva</b>
+          <b>Contraseña nueva</b>
             <input className='forgtPassword-form__field-panel' type='password' name='newPass' placeholder="Enter your new password" required/>
             </label>
           </div>
