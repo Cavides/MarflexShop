@@ -9,7 +9,7 @@ function Header() {
 
 
 return (
-    <div className="Header">
+    <div className="header">
     {/* logo */}
     
       <div className="header__containerLogo">
