@@ -1,5 +1,6 @@
 import React from 'react'
 import "./header.css";
+import Navbar from '../Navbar/Navbar';
 
 const logo = "icoMarflex.png"
 const carrito ="carrito.png";
@@ -41,10 +42,9 @@ return (
     <div className ="header__containerCarrito">
         <img src={carrito} className="header__carrito"/>
     </div>
-    
-
 
     </div>
+
 )
 }
 

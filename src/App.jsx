@@ -7,6 +7,7 @@
 // import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
 
 
+
 import Home from './Pages/Home/Home';
 // import Products from './pages/Products/products';
 // import FAQ from './pages/FAQ/Faq';
@@ -15,7 +16,7 @@ import Home from './Pages/Home/Home';
 
 // import Navbar from "./Components/Navbar/Navbar";
 // import Header from "./Components/Header/Header";
-
+// import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (

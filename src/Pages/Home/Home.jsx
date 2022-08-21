@@ -3,6 +3,7 @@ import "./home.css";
 
 import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
     <div>Gran promocion con 30% de descuento</div>
 
     <Header />
-    <Navbar />
+   <Navbar />
 
 <div className="text">
 <p>Hace referencia a los acontecimientos que han marcado el devenir histórico de la actual República de Colombia, un país latinoamericano ubicado al noroccidente de América del Sur, con una superficie de 2.070.408 km² y una población de 44.091.133.[1] Colombia se conforma como estado en 1810 a partir del Virreinato de la Nueva Granada, colonia del Imperio español que había sido fundada en 1550. En 1886 toma definitivamente su nombre actual de República de Colombia. Su historia se divide por lo general en época precolombina, descubrimiento y conquista española, colonia, independencia, consolidación republicana y siglo XX. Gran parte de la historia de Colombia tiene una estrecha relación con la historia de España hasta la independencia y las historias de Ecuador, Venezuela, Panamá y de América Latina en general.
@@ -27,7 +28,9 @@ El gobierno del presidente Andrés Pastrana adelantó los diálogos más cercano
 
 El estado de violencia y desesperanza llevó a que los colombianos vieran la propuesta de Seguridad democrática presentada por Álvaro Uribe como la mejor opción. Al asumir como presidente en 2001, Uribe adelantó un proceso de reinserción de los grupos paramilitares, ha doblegado la fuerza de las guerrillas y ha adelantado un intenso programa de globalización de la economía caracterizado por la firma de tratados de libre comercio con otros países. El presidente impulsó una reforma política que determinó una modificación en la constitución de 1991, esta reforma establecía la posibilidad de reelección inmediata para el máximo dirigente del estado, así, pudo presentarse como candidato en 2006 y ser reelegido en un segundo término (2006-2010). Sin embargo, su gobierno ha sido el centro de álgidos debates dentro y fuera del país: para muchos observadores ha devuelto la paz y la seguridad a Colombia mientras devolvió la credibilidad a instituciones como la policía y el ejército. Para otros observadores existen varios problemas: los crecientes escándalos de corrupción en las instituciones y referentes a la modificación del artículo de la constitución que permitió la reelección inmediata del presidente y el aumento en la violación de los derechos humanos por parte de los actores armados. </p>
 </div>
-    
+
+<Footer />
+
 </div>
 
   )
