@@ -14,12 +14,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import About from './pages/About/about';
 
 import Navbar from "./Components/Navbar/Navbar";
-
+import Header from "./Components/Header/Header";
 
 
 function App() {
   return (
-    <Navbar />
+    <Header />
   );
 }
 
