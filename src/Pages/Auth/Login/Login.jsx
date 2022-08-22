@@ -15,21 +15,21 @@ function Login() {
   <div className='log-form'>
       {/* title */}
         <div className='log-form__title'>
-          Login
+          Ingreso
         </div>
 
       <form>
           {/* email */}
           <div className='log-form__field'>
           <label htmlFor='email'>
-            <input className='log-form__field-panel' type='text' name='email' placeholder="Enter your email address"/>
+            <input className='log-form__field-panel' type='text' name='email' placeholder="Ingresa tu email"/>
             </label>
           </div>
 
           <div className='log-form__field'>
           {/* password */}
           <label htmlFor='password'>
-            <input className='log-form__field-panel' type='password' name='password' placeholder="Enter your password"/>
+            <input className='log-form__field-panel' type='password' name='password' placeholder="Ingresa tu contraseña"/>
             </label>
           </div>
       </form>

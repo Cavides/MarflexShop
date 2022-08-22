@@ -20,55 +20,53 @@ function Register() {
           {/* primer nombre */}
           <div className='reg-form__field'>
               <label htmlFor='text'>
-                <input className='log-form__field-panel' type='text' name='First Name' placeholder="Enter your name here" required/>
+                <input className='log-form__field-panel' type='text' name='First Name' placeholder="Ingresa tu primer nombre" required/>
                 </label>
               </div>
 
                {/* primer apellido*/}
                <div className='reg-form__field'>
               <label htmlFor='text'>
-                <input className='log-form__field-panel' type='text' name='first Surname' placeholder="Enter your First last name" required/>
+                <input className='log-form__field-panel' type='text' name='first Surname' placeholder="Ingresa tu primer apellido" required/>
                 </label>
               </div>
 
                {/* segundo apellido*/}
                <div className='reg-form__field'>
               <label htmlFor='text'>
-                <input className='log-form__field-panel' type='text' name='second Surname' placeholder="Enter your Second last name"/>
+                <input className='log-form__field-panel' type='text' name='second Surname' placeholder="Ingresa tu segundo apellido(opcional)"/>
                 </label>
               </div>
 
               {/* email */}
               <div className='reg-form__field'>
               <label htmlFor='email'>
-                <input className='log-form__field-panel' type='text' name='email' placeholder="Enter your email address" required />
+                <input className='log-form__field-panel' type='text' name='email' placeholder="Ingresa tu email" required />
                 </label>
               </div>
     
               <div className='reg-form__field'>
               {/* password */}
               <label htmlFor='password'>
-                <input className='log-form__field-panel' type='password' name='password' placeholder="Enter your password" required />
+                <input className='log-form__field-panel' type='password' name='password' placeholder="Ingresa contraseña" required />
                 </label>
               </div>
 
               <div className='reg-form__field'>
               {/* repeat password */}
               <label htmlFor='password'>
-                <input className='log-form__field-panel' type='password' name='rpassword' placeholder="Repeat password" required />
+                <input className='log-form__field-panel' type='password' name='rpassword' placeholder="Repite contraseña" required />
                 </label>
               </div>
           </form>
           
           {/* No soy un robot */}
 
-          
 
           {/* submit */}
             <button className="reg-form__submit">
-            Register
+            Registrarse
             </button>
-    
           {/* Login */}
             <div className="reg-form__login">
             <h5>¿Ya tienes cuenta?</h5>

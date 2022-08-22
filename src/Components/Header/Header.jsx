@@ -20,8 +20,8 @@ return (
     {/* barra busqueda */}
     
       <div className="header__search-field" id="searchform">
-        <input type="text" id="searchterm" placeholder="what are you searching for?" />
-        <button type="button" id="search">Find!</button>
+        <input type="text" id="searchterm" placeholder="¿Qué estas buscando?" />
+        <button type="button" id="search">Buscar!</button>
         </div>
     
     {/* ingreso-registro-cuentas */}

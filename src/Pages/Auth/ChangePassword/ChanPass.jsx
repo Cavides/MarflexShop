@@ -14,7 +14,7 @@ function ChanPass() {
 
     <div className = "changePass-form">
     <div className = "changePass-form__title">
-    <h4>Change Password</h4> 
+    <h4>Cambiar Contraseña</h4> 
     </div>
 
     <form>
@@ -22,21 +22,21 @@ function ChanPass() {
           <div className='changePass-form__field'>
           <label htmlFor='password'>
           <b>Contraseña antigua</b>
-          <input className='changePass-form__field-panel' type='password' name='oldPass' placeholder="Enter your old password" required/>
+          <input className='changePass-form__field-panel' type='password' name='oldPass' placeholder="Ingresa tu contraseña antigua" required/>
             </label>
           </div>
     {/* NewPassword */}
     <div className='changePass-form__field'>
           <label htmlFor='password'>
           <b>Contraseña nueva</b>
-            <input className='changePass-form__field-panel' type='password' name='newPass' placeholder="Enter your new password" required/>
+            <input className='changePass-form__field-panel' type='password' name='newPass' placeholder="Ingresa tu nueva contraseña" required/>
             </label>
           </div>
     {/* RNewPassword */}
     <div className='changePass-form__field'>
           <label htmlFor='password'>
           <b>Confirmar nueva contraseña</b>
-            <input className='changePass-form__field-panel' type='password' name='rNewPass' placeholder="Repeat your new password" required/>
+            <input className='changePass-form__field-panel' type='password' name='rNewPass' placeholder="Repite tu nueva contraseña" required/>
             </label>
           </div>
     </form>

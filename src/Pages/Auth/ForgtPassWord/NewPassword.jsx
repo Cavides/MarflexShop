@@ -10,7 +10,7 @@ function NewPassword() {
     
     <div className = "forgtPassword-form">
     <div className = "forgtPassword-form__title">
-    <h4>Change Password</h4> 
+    <h4>Cambiar Contraseña</h4> 
     </div>
 
     {/* Username */}
@@ -24,14 +24,14 @@ function NewPassword() {
     <div className='forgtPassword-form__field'>
           <label htmlFor='password'>
           <b>Contraseña nueva</b>
-            <input className='forgtPassword-form__field-panel' type='password' name='newPass' placeholder="Enter your new password" required/>
+            <input className='forgtPassword-form__field-panel' type='password' name='newPass' placeholder="Ingresa tu nueva contraseña" required/>
             </label>
           </div>
     {/* RNewPassword */}
     <div className='forgtPassword-form-form__field'>
           <label htmlFor='password'>
           <b>Confirmar nueva contraseña</b>
-            <input className='forgtPassword-form__field-panel' type='password' name='rNewPass' placeholder="Repeat your new password" required/>
+            <input className='forgtPassword-form__field-panel' type='password' name='rNewPass' placeholder="Repite tu nueva contraseña" required/>
             </label>
           </div>
     </form>

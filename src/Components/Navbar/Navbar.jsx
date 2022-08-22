@@ -9,7 +9,7 @@ const NavBar = () => {
         <li className="nav__item">Productos</li>
         <li className="nav__item">FAQ</li>
         <li className="nav__item">Contacto</li>
-        <li className="nav__item">About</li>
+        <li className="nav__item">Nosotros</li>
       </ul>
     </div>
   )

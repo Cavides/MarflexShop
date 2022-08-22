@@ -21,7 +21,7 @@ function AuthCode() {
 {/* code-field */}
 <div className='forgtPassword-form__code'>
       <label htmlFor='number'>
-        <input className='forgtPassword-form__field-panel' type='number' name='codigo' placeholder="Enter your code" required/>
+        <input className='forgtPassword-form__field-panel' type='number' name='codigo' placeholder="Ingresa el código" required/>
         </label>
       </div>
 

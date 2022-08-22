@@ -22,7 +22,7 @@ function ForgtPassword() {
     {/* email-field */}
     <div className='forgtPassword-form__field'>
           <label htmlFor='email'>
-            <input className='forgtPassword-form__field-panel' type='text' name='email' placeholder="Enter your email address"/>
+            <input className='forgtPassword-form__field-panel' type='text' name='email' placeholder="Ingresa tu email"/>
             </label>
           </div>
 
