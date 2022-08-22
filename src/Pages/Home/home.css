@@ -55,9 +55,6 @@
 
 
 
-
-
-
 .Hero__image-uno{
     display: inline-flex;
     align-items: center;
@@ -74,6 +71,16 @@
 .Hero__image-uno p{
     width: 150px;
     height: 80px;
-    font-size: 17px;
-    
+    font-family: inherit;
+    text-transform: uppercase;
+    color: orange;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.250em;
+}
+
+.Hero__credito{
+    width: 80%;
+    height: auto;
+    margin-left: 18%;
 }

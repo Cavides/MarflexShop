@@ -32,7 +32,7 @@ function Footer() {
             <div className="col">
                 <h1>Marflex</h1>
                 <ul>
-                    <li>Horarios 8:00 a.m. hasta 5:00 p.m</li>
+                    <li>Horarios: desde las 8:00 a.m. hasta las 5:00 p.m</li>
                     <li>contacto@Marflex.com</li>
                     <li>WhatsApp</li>
                     <li>Instagram</li>

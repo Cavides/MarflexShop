@@ -14,6 +14,8 @@ const mueble2="mueble2.jpg";
 const mueble3="mueble3.jpg";
 const mueble4="mueble4.jpg";
 
+const cred = "sistecredito.png";
+
 function Home() {
   return (
     <div>
@@ -56,14 +58,17 @@ function Home() {
           <img src={img3}/>
           </div>
 
-
-
-
           </div>
       {/* productos aleatorios */}
-      
+      <div className="Hero__productsrandom">
+
+      </div>
+
 
       {/* Imagen de Credito */}
+      <div className="Hero__credito">
+      <img src={cred}/>
+      </div>
 
 
     </div>

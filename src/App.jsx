@@ -8,8 +8,8 @@
 
 
 
-import Home from './Pages/Home/Home';
-// import Products from './pages/Products/products';
+// import Home from './Pages/Home/Home';
+import Products from './Pages/Products/Products';
 // import FAQ from './pages/FAQ/Faq';
 // import Contacto from './pages/Contacto/Contacto';
 // import About from './pages/About/about';
@@ -21,7 +21,7 @@ import Home from './Pages/Home/Home';
 function App() {
   return (
 
-    <Home />
+    <Products />
   );
 }
 
