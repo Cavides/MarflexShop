@@ -1,11 +1,11 @@
 import React from 'react'
-
 import "./Login.css"
 
 const logo = "icoMarflex.png"
 
 
 function Login() {
+
   return (
     <div className='main-container'>
 <br/><br/>
@@ -45,7 +45,7 @@ function Login() {
         </button>
 
       {/* registration */}
-        <div className="log-form__register">
+        <div className="log-form__register" >
         <h5>¿No tienes cuenta?</h5>
         </div>
 

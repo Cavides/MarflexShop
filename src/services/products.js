@@ -12,3 +12,4 @@ export async function getProduct(id) {
   const response = await fetch(`${BASE_URL}products/${id}`);
   return await response.json();
 }
+

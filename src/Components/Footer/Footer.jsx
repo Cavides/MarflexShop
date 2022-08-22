@@ -38,11 +38,9 @@ function Footer() {
                     <li>Instagram</li>
                     <li>Facebook</li>
                     <li>Bogotá D.C. Colombia</li>
-                    <li>Marflex Shop S.A.S.</li>
-                    
+                    <li>Mercury S.A.S.</li>
                 </ul>
             </div>
-            
             <div className="clearfix"></div>
             <footer className="foot">
                 <p> Copyright © 2022 - All rights Reserved - Designed by Mercury </p>

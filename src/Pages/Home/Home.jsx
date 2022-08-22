@@ -17,10 +17,13 @@ const mueble4="mueble4.jpg";
 const cred = "sistecredito.png";
 
 function Home() {
+
+
+
   return (
     <div>
     {/* adjuntar link */}
-    <div className="aviso"><p>Envios a más de 400 municipios en Colombia</p></div>
+    <div className="aviso"><p>Envios a más de 400 municipios en Colombia </p></div>
 
     <Header />
    <Navbar />
