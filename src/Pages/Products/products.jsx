@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { getProducts } from '../../services/products';
+import { useEffect, useState } from "react";
+import { getProducts } from "../../services/products";
 import Card from "../../Components/Card/card";
 
 import Header from "../../Components/Header/Header";
@@ -21,19 +21,17 @@ function Products() {
 
   return (
     <div>
-    <Header />
-    <Navbar />
+      <Header />
+      <Navbar />
 
       <div className="products">
-      {products.map(product => {
-        return <Card product={product} key={product.id}/>;
-      })}
-    </div>
+        {products.map((product) => {
+          return <Card product={product} key={product.id} />;
+        })}
+      </div>
 
-    <Footer />
-
+      <Footer />
     </div>
-    
   );
 }
 
