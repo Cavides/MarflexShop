@@ -19,7 +19,7 @@ function PreguntasFrecuentes() {
         </div>
 
         <br />
-        {/* proposito */}
+        
         <div className="pyr__subtitle">
           <b>¿Cuánto tarda mi compra en llegar?</b>
         </div>
@@ -33,7 +33,7 @@ function PreguntasFrecuentes() {
         <br />
 
         <br />
-        {/* proposito */}
+      
         <div className="pyr__subtitle">
           <b>¿Hacen envíos hasta mi residencia?</b>
         </div>
@@ -46,7 +46,7 @@ function PreguntasFrecuentes() {
         <br />
 
         <br />
-        {/* proposito */}
+     
         <div className="pyr__subtitle">
           <b>¿Es seguro comprar en Marflex.com?</b>
         </div>
