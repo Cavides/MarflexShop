@@ -14,9 +14,9 @@
 
 // import About from './Pages/About/About';
 // import PreguntasFrecuentes from "./Pages/PreguntasFrecuentes/PreguntasFrecuentes";
-import TyCondi from  "./Pages/TyCondi/TyCondi";
+// import TyCondi from  "./Pages/TyCondi/TyCondi";
 // import PoliticaDevol from "./Pages/PoliticadeDevol/PoliticaDevol";
-// import  PoliticaDatos from "./Pages/PoliticadeDatos/PoliticaDatos";
+import  PoliticaDatos from "./Pages/PoliticadeDatos/PoliticaDatos";
 // import CoberturaEnvios from "./Pages/CoberturadeEnvios/CoberturaEnvios";
 
 
@@ -28,7 +28,7 @@ import TyCondi from  "./Pages/TyCondi/TyCondi";
 
 function App() {
   return (
-    <TyCondi />
+    <PoliticaDatos/>
   );
 }
 

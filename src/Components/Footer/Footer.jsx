@@ -34,7 +34,7 @@ function Footer() {
               <li>Instagram</li>
               <li>Facebook</li>
               <li>Bogotá D.C. Colombia</li>
-              <li>Mercury S.A.S.</li>
+              <li>Marflex S.A.S.</li>
             </ul>
           </div>
           <div className="clearfix"></div>
