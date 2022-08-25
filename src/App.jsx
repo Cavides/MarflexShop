@@ -7,12 +7,18 @@
 // import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
 
 
-
 // import Home from './Pages/Home/Home';
 // import Products from './Pages/Products/Products';
 // import FAQ from './Pages/FAQ/Faq';
 // import Contacto from './Pages/Contacto/Contacto';
-import About from './Pages/About/About';
+
+// import About from './Pages/About/About';
+// import PreguntasFrecuentes from "./Pages/PreguntasFrecuentes/PreguntasFrecuentes";
+// import TyCondi from  "./Pages/TyCondi/TyCondi";
+import PoliticaDevol from "./Pages/PoliticadeDevol/PoliticaDevol";
+// import  PoliticaDatos from "./Pages/PoliticadeDatos/PoliticaDatos";
+// import CoberturaEnvios from "./Pages/CoberturadeEnvios/CoberturaEnvios";
+
 
 // import Pago from './Pages/Pago/Pago';
 
@@ -22,7 +28,7 @@ import About from './Pages/About/About';
 
 function App() {
   return (
-    <About />
+    <PoliticaDevol />
   );
 }
 

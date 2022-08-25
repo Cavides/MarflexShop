@@ -20,7 +20,7 @@ function Footer() {
               <li>¿Quienes somos?</li>
               <li>Politica de datos</li>
               <li>Terminos y condiciones</li>
-              <li>Politica de devolución</li>
+              <li>Politica de devolución y garantías</li>
               <li>Cobertura de envios</li>
               <li>Preguntas frecuentes</li>
             </ul>
