@@ -10,11 +10,11 @@
 
 // import Home from './Pages/Home/Home';
 // import Products from './Pages/Products/Products';
-// import FAQ from './pages/FAQ/Faq';
-// import Contacto from './pages/Contacto/Contacto';
-// import About from './pages/About/about';
+// import FAQ from './Pages/FAQ/Faq';
+// import Contacto from './Pages/Contacto/Contacto';
+import About from './Pages/About/About';
 
-import Pago from './Pages/Pago/Pago';
+// import Pago from './Pages/Pago/Pago';
 
 // import Navbar from "./Components/Navbar/Navbar";
 // import Header from "./Components/Header/Header";
@@ -22,8 +22,7 @@ import Pago from './Pages/Pago/Pago';
 
 function App() {
   return (
-
-    <Pago />
+    <About />
   );
 }
 
