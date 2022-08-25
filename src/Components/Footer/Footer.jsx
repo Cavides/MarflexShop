@@ -22,7 +22,7 @@ function Footer() {
               <li>Terminos y condiciones</li>
               <li>Politica de devolución</li>
               <li>Cobertura de envios</li>
-              <li>Preguntas frecuentes</li>f<li>PQR</li>
+              <li>Preguntas frecuentes</li>
             </ul>
           </div>
           <div className="col">
