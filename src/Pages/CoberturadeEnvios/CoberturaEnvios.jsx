@@ -6,10 +6,19 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 
 function CoberturaEnvios() {
+
+ 
+
+
   return (
     <div>
+      
       <Header />
       <Navbar />
+
+
+      {/* {alert("Presione Ctrl + F para buscar tu ciudad")}   */}
+
 
       <div className="CoberEnv-container">
         {/* titulo */}

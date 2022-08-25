@@ -30,9 +30,7 @@ function Footer() {
             <ul>
               <li>Horarios: desde las 8:00 a.m. hasta las 5:00 p.m</li>
               <li>contacto@Marflex.com</li>
-              <li>WhatsApp</li>
-              <li>Instagram</li>
-              <li>Facebook</li>
+              <li><a href="https://www.facebook.com/EmpresaMarflex" target="_blank">Facebook</a></li>
               <li>Bogotá D.C. Colombia</li>
               <li>Marflex S.A.S.</li>
             </ul>

@@ -9,6 +9,7 @@
 
 // import Home from './Pages/Home/Home';
 // import Products from './Pages/Products/Products';
+import ProductDetail from "./Pages/Products/ProductDeta/ProductDetail";
 // import FAQ from './Pages/FAQ/Faq';
 // import Contacto from './Pages/Contacto/Contacto';
 
@@ -16,7 +17,7 @@
 // import PreguntasFrecuentes from "./Pages/PreguntasFrecuentes/PreguntasFrecuentes";
 // import TyCondi from  "./Pages/TyCondi/TyCondi";
 // import PoliticaDevol from "./Pages/PoliticadeDevol/PoliticaDevol";
-import  PoliticaDatos from "./Pages/PoliticadeDatos/PoliticaDatos";
+// import  PoliticaDatos from "./Pages/PoliticadeDatos/PoliticaDatos";
 // import CoberturaEnvios from "./Pages/CoberturadeEnvios/CoberturaEnvios";
 
 
@@ -28,7 +29,7 @@ import  PoliticaDatos from "./Pages/PoliticadeDatos/PoliticaDatos";
 
 function App() {
   return (
-    <PoliticaDatos/>
+    <ProductDetail />
   );
 }
 
