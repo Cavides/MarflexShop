@@ -9,9 +9,9 @@
 
 // import Home from './Pages/Home/Home';
 // import Products from './Pages/Products/Products';
-import ProductDetail from "./Pages/Products/ProductDeta/ProductDetail";
+// import ProductDetail from "./Pages/Products/ProductDeta/ProductDetail";
 // import FAQ from './Pages/FAQ/Faq';
-// import Contacto from './Pages/Contacto/Contacto';
+import Contacto from './Pages/Contacto/Contacto';
 
 // import About from './Pages/About/About';
 // import PreguntasFrecuentes from "./Pages/PreguntasFrecuentes/PreguntasFrecuentes";
@@ -29,7 +29,7 @@ import ProductDetail from "./Pages/Products/ProductDeta/ProductDetail";
 
 function App() {
   return (
-    <ProductDetail />
+    <Contacto />
   );
 }
 
