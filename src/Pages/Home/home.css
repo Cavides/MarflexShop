@@ -5,10 +5,13 @@
 
 .aviso{
     background-color: black;
+   
 }
 
 .aviso p{
     color: white;
+    text-align: center;
+   
 }
 
 

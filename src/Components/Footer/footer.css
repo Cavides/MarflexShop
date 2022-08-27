@@ -144,3 +144,7 @@ html,body {
       transform: translateY(0px);
     }
   }
+  
+  navBar__navLink{
+    text-decoration: none;
+  }

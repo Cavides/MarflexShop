@@ -5,16 +5,16 @@ import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 
-const img1 = "camion.png";
-const img2 = "dinero.png";
-const img3 = "IconCasa.png";
+const img1 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/camion_ddvrzu.png";
+const img2 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/dinero_bjtxq5.png";
+const img3 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/imagenes/IconCasa_nisyi5.png";
 
-const mueble1 = "mueble1.jpg";
-const mueble2 = "mueble2.jpg";
-const mueble3 = "mueble3.jpg";
-const mueble4 = "mueble4.jpg";
+const mueble1 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/imagenes/mueble1_yev7hv.jpg";
+const mueble2 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/imagenes/mueble2_uhuyu1.jpg";
+const mueble3 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/imagenes/mueble3_htgoka.jpg";
+const mueble4 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/imagenes/mueble4_msnadk.jpg";
 
-const cred = "sistecredito.png";
+const cred = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626274/imagenes/sistecredito_opwvma.png";
 
 function Home() {
   return (

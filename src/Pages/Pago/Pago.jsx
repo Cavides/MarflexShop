@@ -6,7 +6,7 @@ import Footer from "../../Components/Footer/Footer";
 
 import "./pago.css";
 
-const imgpago= "pago.png"
+const imgpago= "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/imagenes/pago_sym54q.png"
 
 function Pago() {
   return (

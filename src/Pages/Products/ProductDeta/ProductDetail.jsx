@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import Header from "../../../Components/Header/Header";
 import Navbar from "../../../Components/Navbar/Navbar";
@@ -11,11 +11,11 @@ import { getProduct } from "../../../services/products";
 
 function ProductDetail() {
   const [product, setProduct] = useState({});
-  //   const { id } = useParams();
+    const { id } = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await getProduct(2);
+      const result = await getProduct(id);
       setProduct(result);
     };
     fetchData();
@@ -25,7 +25,7 @@ function ProductDetail() {
 
     <div>
     <Header />
-    <Navbar />
+    <Navbar /> 
     <div className="detail">
       <h1 className="detail__title">{`${product.title}`}</h1>
       {" "}

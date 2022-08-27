@@ -1,28 +1,42 @@
-import React from "react";
+import React,{useState} from "react";
 
 import "./register.css";
 
-const logo = "icoMarflex.png";
+const logo = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/icoMarflex_zibr1l.png";
 
 function Register() {
+
+  const [form, setForm] = useState({});
+
+  const handlerChange = (event) => {
+    const key = event.target.name;
+    const value = event.target.value;
+    setForm({...form, [key]: value});
+  };
+
+    const handlerSumbit = (e) => {
+      e.preventDefault();
+      console.log("info enviada",form);
+    };
+
   return (
     <div className="main-container">
-      <div className="logoMarflex">
+      <div className="regoMarflex">
         <img src={logo} />
       </div>
       <div className="reg-form">
         {/* title */}
         <div className="reg-form__title">Registro de Usuario</div>
 
-        <form>
+        <form onSubmit={handlerSumbit}>
           {/* primer nombre */}
           <div className="reg-form__field">
             <label htmlFor="text">
               <input
-                className="log-form__field-panel"
+                className="reg-form__field-panel"
                 type="text"
                 name="First Name"
-                placeholder="Ingresa tu primer nombre"
+                placeholder="Ingresa tu primer nombre" onChange={handlerChange}
                 required
               />
             </label>
@@ -32,7 +46,7 @@ function Register() {
           <div className="reg-form__field">
             <label htmlFor="text">
               <input
-                className="log-form__field-panel"
+                className="reg-form__field-panel" onChange={handlerChange}
                 type="text"
                 name="first Surname"
                 placeholder="Ingresa tu primer apellido"
@@ -45,7 +59,7 @@ function Register() {
           <div className="reg-form__field">
             <label htmlFor="text">
               <input
-                className="log-form__field-panel"
+                className="reg-form__field-panel" onChange={handlerChange} 
                 type="text"
                 name="second Surname"
                 placeholder="Ingresa tu segundo apellido(opcional)"
@@ -57,7 +71,7 @@ function Register() {
           <div className="reg-form__field">
             <label htmlFor="email">
               <input
-                className="log-form__field-panel"
+                className="reg-form__field-panel" onChange={handlerChange}
                 type="text"
                 name="email"
                 placeholder="Ingresa tu email"
@@ -70,7 +84,7 @@ function Register() {
             {/* password */}
             <label htmlFor="password">
               <input
-                className="log-form__field-panel"
+                className="reg-form__field-panel" onChange={handlerChange}
                 type="password"
                 name="password"
                 placeholder="Ingresa contraseña"
@@ -83,7 +97,7 @@ function Register() {
             {/* repeat password */}
             <label htmlFor="password">
               <input
-                className="log-form__field-panel"
+                className="reg-form__field-panel" onChange={handlerChange}
                 type="password"
                 name="rpassword"
                 placeholder="Repite contraseña"
@@ -91,13 +105,13 @@ function Register() {
               />
             </label>
           </div>
+           {/* submit */}
+        <button type="submit" className="reg-form__submit">Registrarse</button>
         </form>
 
         {/* No soy un robot */}
 
-        {/* submit */}
-        <button className="reg-form__submit">Registrarse</button>
-        {/* Login */}
+        {/* regin */}
         <div className="reg-form__login">
           <h5>¿Ya tienes cuenta?</h5>
         </div>

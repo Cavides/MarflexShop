@@ -1,9 +1,27 @@
-import React from "react";
+import React,{useState} from "react";
+
 import "./Login.css";
 
-const logo = "icoMarflex.png";
+const logo = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/icoMarflex_zibr1l.png";
 
 function Login() {
+
+
+  // funciones para formulario
+
+const [form, setForm] = useState({});
+
+const handlerChange = (event) => {
+  const key = event.target.name;
+  const value = event.target.value;
+  setForm({...form, [key]: value});
+};
+
+  const handlerSumbit = (e) => {
+    e.preventDefault();
+    console.log("info enviada",form);
+  };
+
   return (
     <div className="main-container">
       <br />
@@ -15,12 +33,12 @@ function Login() {
         {/* title */}
         <div className="log-form__title">Ingreso</div>
 
-        <form>
+        <form onSubmit = {handlerSumbit}>
           {/* email */}
           <div className="log-form__field">
             <label htmlFor="email">
               <input
-                className="log-form__field-panel"
+                className="log-form__field-panel" onChange={handlerChange}
                 type="text"
                 name="email"
                 placeholder="Ingresa tu email"
@@ -32,22 +50,21 @@ function Login() {
             {/* password */}
             <label htmlFor="password">
               <input
-                className="log-form__field-panel"
+                className="log-form__field-panel" onChange={handlerChange}
                 type="password"
                 name="password"
                 placeholder="Ingresa tu contraseña"
               />
             </label>
           </div>
+           {/* submit */}
+        <button type="submit" className="log-form__submit" >Login</button>
         </form>
 
         {/* forgotPassword */}
         <div className="log-form__forgotpassword">
           <h4>¿Olvidaste tu contraseña?</h4>
         </div>
-
-        {/* submit */}
-        <button className="log-form__submit">Login</button>
 
         {/* registration */}
         <div className="log-form__register">

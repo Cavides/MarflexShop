@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./footer.css";
 
@@ -17,12 +18,12 @@ function Footer() {
           <div className="col">
             <h1>Links de Interes</h1>
             <ul>
-              <li>¿Quienes somos?</li>
-              <li>Politica de datos</li>
-              <li>Terminos y condiciones</li>
-              <li>Politica de devolución y garantías</li>
-              <li>Cobertura de envios</li>
-              <li>Preguntas frecuentes</li>
+              <li><Link className= 'navBar__navLink' to='/about'>¿Quienes somos?</Link></li>
+              <li><Link className= 'navBar__navLink' to='/politicadedatos'>Politica de datos</Link></li>
+              <li><Link className= 'navBar__navLink' to='/terminosycondiciones'>Terminos y condiciones</Link></li>
+              <li><Link className= 'navBar__navLink' to='/politicadedevolucion'>Politica de devolucion y garantia</Link></li>
+              <li><Link className= 'navBar__navLink' to='/coberturaenvios'>Cobertura de envios</Link></li>
+              <li><Link className= 'navBar__navLink' to='/faq'>PreguntasFrecuentes</Link></li>
             </ul>
           </div>
           <div className="col">
