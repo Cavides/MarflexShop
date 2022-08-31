@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
     background-size: cover;
     background-image: url("https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/imagenes/mueble4_msnadk.jpg");
     }

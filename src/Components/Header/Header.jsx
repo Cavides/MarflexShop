@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 import Navbar from "../Navbar/Navbar";
 
@@ -28,11 +29,11 @@ function Header() {
       <div className="header__cuenta">
         <ul className="header__cuenta-menu">
           <li className="cuenta__item">
-            <b>Registrarse </b>
+            <b><Link className= 'navBar__navLink' to='/register'>Registrarse</Link> </b>
           </li>
           <li className="cuenta__item"> / </li>
           <li className="cuenta__item">
-            <b>Ingresar</b>
+            <b><Link className= 'navBar__navLink' to='/login'>Ingresar</Link> </b>
           </li>
         </ul>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 
 import Header from "../../Components/Header/Header";
@@ -21,7 +22,7 @@ function Home() {
     <div>
       {/* adjuntar link */}
       <div className="aviso">
-        <p>Envios a más de 400 municipios en Colombia </p>
+        <p><Link className= 'navBar__navLink' to='/coberturaenvios'>Envios a más de 400 municipios en Colombia</Link> </p>
       </div>
 
       <Header />

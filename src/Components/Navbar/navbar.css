@@ -33,4 +33,6 @@
     margin-left: 30%;
   }
 
-  
+  .navBar__navLink{
+    text-decoration: none;
+  }
