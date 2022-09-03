@@ -1,9 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import "./forgtpassword.css";
 
 function ForgtPassword() {
+
+  const [form, setForm] = useState({});
+
+  const handlerChange = (event) => {
+    const key = event.target.name;
+    const value = event.target.value;
+    setForm({...form, [key]: value});
+  };
+  
+    const handlerSumbit = (e) => {
+      e.preventDefault();
+      console.log("info enviada",form);
+    };
+
+
   return (
-    <div className="main-container">
+    <div className="main-container_forget">
       <div className="forgtPassword-form">
         {/* title */}
         <div className="forgtPassword-form__title">
@@ -18,22 +34,20 @@ function ForgtPassword() {
         </div>
 
         {/* email-field */}
-        <div className="forgtPassword-form__field">
+        <form className="forgtPassword-form__field" onSubmit = {handlerSumbit}>
           <label htmlFor="email">
             <input
-              className="forgtPassword-form__field-panel"
+              className="forgtPassword-form__field-panel" onChange={handlerChange}
               type="text"
               name="email"
               placeholder="Ingresa tu email"
             />
           </label>
-        </div>
-
-        {/* button aceptar */}
-        <button className="forgtPassword-form__cancelar">Cancelar</button>
-
-        {/* buttton cancelar */}
+          <button className="forgtPassword-form__cancelar"><Link className= 'navBar__navLink' to='/login'>Cancelar</Link></button>
+           {/* buttton cancelar */}
         <button className="forgtPassword-form__submit">Buscar</button>
+        </form>
+ 
       </div>
     </div>
   );

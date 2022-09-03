@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
 
 import "./Login.css";
 
@@ -27,7 +28,7 @@ const handlerChange = (event) => {
       <br />
       <br />
       <div className="logoMarflex">
-        <img src={logo} />
+      <Link className= 'navBar__navLink' to='/'><img src={logo} /></Link>
       </div>
       <div className="log-form">
         {/* title */}
@@ -63,12 +64,12 @@ const handlerChange = (event) => {
 
         {/* forgotPassword */}
         <div className="log-form__forgotpassword">
-          <h4>¿Olvidaste tu contraseña?</h4>
+          <h4><Link className= 'navBar__navLink' to='/forgetpassword'>¿Olvidaste tu contraseña?</Link></h4>
         </div>
 
         {/* registration */}
         <div className="log-form__register">
-          <h5>¿No tienes cuenta?</h5>
+          <h5><Link className= 'navBar__navLink' to='/register'>¿No tienes cuenta?</Link></h5>
         </div>
       </div>
     </div>

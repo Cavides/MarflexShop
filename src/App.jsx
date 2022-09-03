@@ -2,9 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Pages/Auth/Login/Login";
 import Register from "./Pages/Auth/Register/Register";
 // import ChangePass from "./Pages/Auth/ChangePassword/ChanPass";
-// import ForgtPassword from "./Pages/Auth/ForgtPassWord/ForgtPassword";
-// import AuthCode from "./Pages/Auth/ForgtPassWord/AuthCode";
-// import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
+import ForgtPassword from "./Pages/Auth/ForgtPassWord/ForgtPassword";
+import AuthCode from "./Pages/Auth/ForgtPassWord/AuthCode";
+import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
 
 import Home from "./Pages/Home/Home";
 import Products from './Pages/Products/Products';
@@ -37,9 +37,12 @@ function App() {
       <Route path='/politicadedevolucion' element={<PoliticaDevol />} />
       <Route path='/politicadedatos' element={<PoliticaDatos />} />
       <Route path='/coberturaenvios' element={<CoberturaEnvios />} />
-      <Route path='products/productdetail/:id' element={<ProductDetail />} />
+      <Route path='products/:id' element={<ProductDetail />} />
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
+      <Route path='/forgetpassword' element={<ForgtPassword />} />
+      <Route path='/authcode' element={<AuthCode />} />
+      <Route path='/newpassword' element={<NewPassword />} />
       </Routes>
     </BrowserRouter>
   );

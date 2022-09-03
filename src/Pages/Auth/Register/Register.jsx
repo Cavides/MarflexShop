@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
 
 import "./register.css";
 
@@ -22,7 +23,7 @@ function Register() {
   return (
     <div className="main-container">
       <div className="regoMarflex">
-        <img src={logo} />
+      <Link className= 'navBar__navLink' to='/'><img src={logo} /></Link>
       </div>
       <div className="reg-form">
         {/* title */}
@@ -113,7 +114,7 @@ function Register() {
 
         {/* regin */}
         <div className="reg-form__login">
-          <h5>¿Ya tienes cuenta?</h5>
+          <h5><Link className= 'navBar__navLink' to='/login'>¿Ya tienes cuenta?</Link></h5>
         </div>
       </div>
     </div>
