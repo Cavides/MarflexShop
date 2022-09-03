@@ -37,7 +37,7 @@ function App() {
       <Route path='/politicadedevolucion' element={<PoliticaDevol />} />
       <Route path='/politicadedatos' element={<PoliticaDatos />} />
       <Route path='/coberturaenvios' element={<CoberturaEnvios />} />
-      <Route path='products/:id' element={<ProductDetail />} />
+      <Route path='products/ProductDetail/:id' element={<ProductDetail />} />
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/forgetpassword' element={<ForgtPassword />} />
