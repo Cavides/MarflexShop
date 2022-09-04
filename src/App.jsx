@@ -8,7 +8,7 @@ import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
 import ErrorMessage from "./Pages/page404/Error404";
 
 import Home from "./Pages/Home/Home";
-// import Products from './Pages/Products/Products';
+import Products from './Pages/Products/Products';
 import ProductDetail from "./Pages/Products/ProductDeta/ProductDetail";
 import Contacto from './Pages/Contacto/Contacto';
 import About from './Pages/About/About';
@@ -31,7 +31,7 @@ function App() {
       <Routes>
       <Route path='*' element={<ErrorMessage />} />
       <Route path='/' element={<Home />} />
-      {/* <Route path='/products' element={<Products />} /> */}
+      <Route path='/products' element={<Products />} />
       <Route path='/faq' element={<PreguntasFrecuentes />} />
       <Route path='/contacto' element={<Contacto />} />
       <Route path='/about' element={<About />} />
