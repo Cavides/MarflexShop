@@ -5,6 +5,7 @@ import Register from "./Pages/Auth/Register/Register";
 import ForgtPassword from "./Pages/Auth/ForgtPassWord/ForgtPassword";
 import AuthCode from "./Pages/Auth/ForgtPassWord/AuthCode";
 import NewPassword from "./Pages/Auth/ForgtPassWord/NewPassword";
+import ErrorMessage from "./Pages/page404/Error404";
 
 import Home from "./Pages/Home/Home";
 import Products from './Pages/Products/Products';
@@ -28,6 +29,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+      <Route path='*' element={<ErrorMessage />} />
       <Route path='/' element={<Home />} />
       <Route path='/products' element={<Products />} />
       <Route path='/faq' element={<PreguntasFrecuentes />} />
