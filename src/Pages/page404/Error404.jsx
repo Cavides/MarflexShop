@@ -4,7 +4,7 @@ import "./error404.css";
 function error404() {
   return (
     <div className="error404">
-    <h1>Data not Found</h1>
+    <h1>Data not Found CTM</h1>
     </div>
   )
 }
