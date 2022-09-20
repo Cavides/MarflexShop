@@ -21,9 +21,8 @@ import CoberturaEnvios from "./Pages/CoberturadeEnvios/CoberturaEnvios";
 
 // import Pago from './Pages/Pago/Pago';
 
-// import Navbar from "./Components/Navbar/Navbar";
-// import Header from "./Components/Header/Header";
-// import Footer from "./Components/Footer/Footer";
+import Carrito from "./Components/Carrito/carrito";
+
 
 function App() {
   return (
@@ -45,6 +44,7 @@ function App() {
       <Route path='/forgetpassword' element={<ForgtPassword />} />
       <Route path='/authcode' element={<AuthCode />} />
       <Route path='/newpassword' element={<NewPassword />} />
+      <Route path='/carrito' element={<Carrito />} />
       </Routes>
     </BrowserRouter>
   );
