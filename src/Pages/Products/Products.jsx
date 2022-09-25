@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "../../services/products";
-import Card from "../../Components/Card/card";
 
 import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
