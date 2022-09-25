@@ -114,7 +114,7 @@ function Register() {
 
         {/* regin */}
         <div className="reg-form__login">
-          <h5><Link className= 'navBar__navLink' to='/login'>¿Ya tienes cuenta?</Link></h5>
+          <h5><Link className= 'navBar__navLinkAuth' to='/login'>¿Ya tienes cuenta?</Link></h5>
         </div>
       </div>
     </div>

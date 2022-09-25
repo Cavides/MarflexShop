@@ -64,12 +64,12 @@ const handlerChange = (event) => {
 
         {/* forgotPassword */}
         <div className="log-form__forgotpassword">
-          <h4><Link className= 'navBar__navLink' to='/forgetpassword'>¿Olvidaste tu contraseña?</Link></h4>
+          <h4><Link className= 'navBar__navLinkAuth' to='/forgetpassword'>¿Olvidaste tu contraseña?</Link></h4>
         </div>
 
         {/* registration */}
         <div className="log-form__register">
-          <h5><Link className= 'navBar__navLink' to='/register'>¿No tienes cuenta?</Link></h5>
+          <h5><Link className= 'navBar__navLinkAuth' to='/register'>¿No tienes cuenta?</Link></h5>
         </div>
       </div>
     </div>

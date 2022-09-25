@@ -33,19 +33,19 @@ function Products() {
       <div className="home-container">
       {status === "success" ? (
         <>
-          <h2>New Arrivals</h2>
+          <h2>Salas y Comedores</h2>
           <div className="products">
             {data &&
               data?.map((product) => (
                 <div key={product.id} className="product">
-                  <h3>{product.name}</h3>
+                  <h3>{product.title}</h3>
                   <img src={product.image} alt={product.name} />
                   <div className="details">
                     <span>{product.desc}</span>
                     <span className="price">${product.price}</span>
                   </div>
                   <button onClick={() => handleAddToCart(product)}>
-                    Add To Cart
+                    Agregar a Carrito
                   </button>
                 </div>
               ))}

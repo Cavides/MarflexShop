@@ -19,7 +19,7 @@ function Header() {
       {/* logo */}
 
       <div className="header__containerLogo">
-        <img src={logo} className="header__logo" alt="" />
+      <Link className= 'navBar__navLink' to='/'><img src={logo} className="header__logo"/></Link>
       </div>
 
       {/* barra busqueda */}
