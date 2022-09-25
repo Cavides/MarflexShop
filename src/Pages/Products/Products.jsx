@@ -17,14 +17,15 @@ function Products() {
   
   const { items: products, status } = useSelector((state) => state.products);
   const dispatch = useDispatch();
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const { data, error, isLoading } = useGetAllProductsQuery();
   console.log("Api", isLoading);
 
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
-    history.push("/cart");
+    //navigate.push("/cart"); esto es para que no se vaya a la pagina de carrito pero manda un error en consola.
+    navigate("/cart");
   };
   return (
     <div>
