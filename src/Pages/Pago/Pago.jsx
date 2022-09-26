@@ -13,7 +13,7 @@ function Pago() {
     <div>
     <Header />
     <Navbar />
-      <div className="main-container">
+      <div className="main-containerPago">
         <div className="pago-form">
           {/* title */}
           <div className="pago-form__title">Pago de Productos</div>

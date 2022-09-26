@@ -150,7 +150,7 @@ const products = [
 	    type:"Sofa",
         category: "Salas",
         desc: "Sofa Cama Fenix Plata 170 cm",
-        descripcion:"Tapizado: Tela Microfibra 100% Poliester. Estructura: Madera Sajo 12% Humedad Espuma: Espuma Alta Densidad 23 Rosada Dimensiones: (Ancho X Largo X Alto) Cm 170 X 80 X 78 Patas: Metalicas De 5Cm De Altura Funciones: Ideal Para Espacios Reducidos, Cuenta Con 3 Posiciones Y Baul En El Sentadero. Los Brazos Son Removibles.",
+        descripcion:"Dimensiones: (Ancho X Largo X Alto) Cm 170 X 80 X 78 Patas: Metalicas De 5Cm De Altura Funciones: Ideal Para Espacios Reducidos, Cuenta Con 3 Posiciones Y Baul En El Sentadero. Los Brazos Son Removibles.",
         price: 1027500,
         medidas:"Ancho: 170 cm Alto: 98 cm Profundo: 90 cm",
 	    material:"Tela Microfibra",
@@ -253,10 +253,28 @@ const products = [
         medidas:"Ancho: 62.9 cm Alto: 120 cm Profundo: 30 cm",
 	    material:"Tablero aglomerado de 15 mm",
         garantia:"5 años en la madera y de 1 año para los herrajes.",
-        armado:"S Requiere Armado",
+        armado:"Sí Requiere Armado",
 	    recomendaciones:"No poner el producto en contacto con el agua, para limpiarlo utiliza un trapo humedecido con agua. No utilices objetos afilados en las superficies del producto porque lo pueden rayar. No dejes caer o golpear el producto y no superes la carga especificada por el fabricante.",
         image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664157878/Muebles/BLW921-1_540x_ryu3w0.webp"
     },
+
+    {
+        id:17,
+        title: "Arrimo Beijing",
+	    type:"Bife",
+        category: "Comedores",
+        desc: "Arrimo Beijing Rovere 100 cm Minimalista",
+        descripcion:"Arrimo con diseño simple y moderno, para ubicar en cualquier area del hogar, espacios para ubicar objetos decorativos, libros y otros, facil instalacion",
+        price:187900 ,
+        medidas:"Ancho (cm): 100 Alto (cm): 80 Profundo (cm): 30",
+	    material:"Tablero aglomerado de 15 mm",
+        garantia:"5 Años en Madera y 1 año herrajes",
+        armado:"Sí Requiere Armado",
+	    recomendaciones:"No poner el producto en contacto con el agua, para limpiarlo utiliza un trapo humedecido con agua. No utilices objetos afilados en las superficies del producto porque lo pueden rayar. No dejes caer o golpear el producto y no superes la carga especificada por el fabricante.",
+        image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664199823/Muebles/Arrimo-Beijing-Rovere_ELV1891-1_540x_xfn274.webp"
+    },
+
+    
 
 
 ];

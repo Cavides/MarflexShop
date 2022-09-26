@@ -108,7 +108,7 @@ const Cart = () => {
                 <span className="amount">${cart.cartTotalAmount}</span>
               </div>
               <p>Impuestos y envios no incluidos</p>
-              <button>Continuar con la compra</button>
+              <button><Link to="/pago" className="navBar__navLink">Continuar con la compra</Link></button>
               <div className="continue-shopping">
                 <Link to="/products">
                   <svg

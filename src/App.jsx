@@ -24,7 +24,7 @@ import CoberturaEnvios from "./Pages/CoberturadeEnvios/CoberturaEnvios";
 
 import Cart from "./Components/Cart/Cart";
 
-// import Pago from './Pages/Pago/Pago';
+import Pago from './Pages/Pago/Pago';
 
 
 
@@ -48,6 +48,7 @@ function App() {
       <Route path='/authcode' element={<AuthCode />} />
       <Route path='/newpassword' element={<NewPassword />} />
       <Route path='/cart' element={<Cart />} />
+      <Route path='/pago' element={<Pago />} />
       </Routes>
     </BrowserRouter>
   );
