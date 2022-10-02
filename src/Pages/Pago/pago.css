@@ -14,7 +14,7 @@
 
 .pago-form{
   width: 500px;
-  height: 1000px;
+  height: 1200px;
   background: white;
   margin: auto;
   margin-top: 10px;
@@ -67,4 +67,11 @@
     color: white;
     margin-bottom: 16px;
         }
+
+.pago-form__products{
+    width: 550px;
+    margin-bottom: 60%;
+    margin-top: -1145px;
+    margin-left: 52%;
+}
 
