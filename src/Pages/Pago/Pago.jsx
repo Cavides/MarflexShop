@@ -9,6 +9,8 @@ import {
   removeFromCart,
 } from "../../slices/cartSlice";
 
+import { Link } from "react-router-dom";
+
 import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
@@ -225,7 +227,7 @@ function Pago() {
             </div>
           </form>
 
-          <button className="pago-form__cancelar">Cancelar</button>
+          <Link to="/"><button className="pago-form__cancelar">Cancelar</button></Link>
 
           {/* buttton cancelar */}
           <button className="pago-form__comprar">Comprar</button>

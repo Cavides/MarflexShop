@@ -274,7 +274,55 @@ const products = [
         image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664199823/Muebles/Arrimo-Beijing-Rovere_ELV1891-1_540x_xfn274.webp"
     },
 
+    {
+        id:18,
+        title: "Centro Cantabria",
+	    type:"Muebles para Tv",
+        category: "Salas",
+        desc: "Centro de Entretenimiento Rovere 180 cm",
+        descripcion:"Múltiples opciones de organizar tus elementos de tecnología, consolas y accesorios. Cuenta con entrepaños en toda su estructura, repartidos en la parte superior, lateral e inferior. También con dos puertas abatibles como detalle. En la parte central posee un espacio para ubicar un televisor hasta de 55 pulgadas.",
+        price:546900 ,
+        medidas:"Ancho: 180 cm Alto: 180 cm Profundo: 40 cm",
+	    material:"Madera aglomerada 15 mm",
+        garantia:"5 años en la madera y de 1 año para los herrajes",
+        armado:"Sí Requiere Armado",
+	    recomendaciones:"No debe utilizarse en la limpieza, abrasivos como esponjas de acero, alcohol, vinagre, limón, o productos corrosivos que puedan rayar o quita la película protectora en los muebles. Para la limpieza de muebles en general, deben utilizarse un paño suave, ligeramente humedecido y jabón. Evitar Excesos de agua. Para mover el mueble, es importante elevar y no arrastrar para evitar daño a la estructura.",
+        image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664737475/Muebles/CLR3099-1_540x_f0r9jk.webp"
+    },
+
     
+    {
+        id:19,
+        title: "Centro Marsella",
+	    type:"Muebles para Tv",
+        category: "Salas",
+        desc: "Centro de Entretenimiento Niebla 202 cm ",
+        descripcion:"Centro de entretenimiento con espacio para TV de 60'' Max, diseño moderno con combinacion de colores, multiples entrepaños y surperficies para multiples objetos",
+        price: 670900,
+        medidas:"Centro de Entretenimiento Marsella ",
+	    material:"Tablero aglomerado de 15 mm",
+        garantia:"5 Años en Madera y 1 año herrajes",
+        armado:"Sí Requiere Armado",
+	    recomendaciones:"No poner el producto en contacto con el agua, para limpiarlo utiliza un trapo humedecido con agua. No utilices objetos afilados en las superficies del producto porque lo pueden rayar. No dejes caer o golpear el producto y no superes la carga especificada por el fabricante.",
+        image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664737532/Muebles/Centro-entretenimiento-Marsella-Niebla-y-Plomo_CNP7065-1_540x_y1iqya.webp"
+    },
+
+    
+    {
+        id:20,
+        title: "Rack Karev",
+	    type:"Muebles para Tv",
+        category: "Salas",
+        desc: "Rack Karev Miel 161 cm con Dos Puertas",
+        descripcion:"Este rack Karev tiene espacio para televisor de hasta 65 pulg. Tiene patas y manijas en color negro. Múltiples entrepaños y superficies para ubicar objetos personales o electrónicos. Tiene 2 pasacables para evitar que se vea desordenado. Es resistente a los rayones y la humedad",
+        price: 470900,
+        medidas:"Alto: 53.4 cm Ancho: 161 cm Profundo: 34 cm",
+	    material:"Madera aglomerada 15 mm",
+        garantia:"5 años para la madera y de 1 año para los herrajes",
+        armado:"Sí Requiere Armado",
+	    recomendaciones:"No debe utilizarse en la limpieza, abrasivos como esponjas de acero, alcohol, vinagre, limón, o productos corrosivos que puedan rayar o quitar la película protectora en los muebles. Para la limpieza de muebles en general, deben utilizarse un paño suave, ligeramente humedecido y jabón. Evitar Excesos de agua. Para mover el mueble, es importante elevar y no arrastrar para evitar daño a la estructura.",
+        image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664737676/Muebles/Rack-TV-Karev-Miel-RLM4158-1_540x_d1bogp.webp"
+    },
 
 
 ];
