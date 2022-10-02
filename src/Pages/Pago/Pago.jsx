@@ -23,25 +23,26 @@ function Pago() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-  dispatch(getTotals());
-}, [cart, dispatch]);
+    dispatch(getTotals());
+  }, [cart, dispatch]);
 
-const handleAddToCart = (product) => {
-  dispatch(addToCart(product));
-};
-const handleDecreaseCart = (product) => {
-  dispatch(decreaseCart(product));
-};
-const handleRemoveFromCart = (product) => {
-  dispatch(removeFromCart(product));
-};
-const handleClearCart = () => {
-  dispatch(clearCart());
-};
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
+  const handleDecreaseCart = (product) => {
+    dispatch(decreaseCart(product));
+  };
+  const handleRemoveFromCart = (product) => {
+    dispatch(removeFromCart(product));
+  };
+  const handleClearCart = () => {
+    dispatch(clearCart());
+  };
   return (
     <div>
       <Header />
       <Navbar />
+      <div className="all-container">
       <div className="main-containerPago">
         <div className="pago-form">
           {/* title */}
@@ -231,9 +232,8 @@ const handleClearCart = () => {
         </div>
       </div>
 
-
       <div className="pago-form__products">
-      <div>
+        <div>
           <div className="cart-items">
             {cart.cartItems &&
               cart.cartItems.map((cartItem) => (
@@ -270,12 +270,12 @@ const handleClearCart = () => {
                 <span>Subtotal</span>
                 <span className="amount">${cart.cartTotalAmount}</span>
               </div>
-              </div>
-              </div>
-              </div>
-
+            </div>
+          </div>
+        </div>
       </div>
 
+      </div>
 
       <Footer />
     </div>

@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .main-containerPago{
     display: flex;
     flex-direction: column;
@@ -69,9 +71,10 @@
         }
 
 .pago-form__products{
+
     width: 550px;
-    margin-bottom: 60%;
-    margin-top: -1145px;
+    margin-top: -1142px;
     margin-left: 52%;
+    margin-bottom: 900px;
 }
 
