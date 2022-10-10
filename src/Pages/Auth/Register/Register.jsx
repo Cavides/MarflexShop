@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
+import {createUser} from "../../../Services/User_services";
 
 import "./register.css";
 
@@ -15,8 +16,9 @@ function Register() {
     setForm({...form, [key]: value});
   };
 
-    const handlerSumbit = (e) => {
+    const handlerSumbit =(e) => {
       e.preventDefault();
+      createUser(form);
       console.log("info enviada",form);
     };
 
@@ -36,7 +38,7 @@ function Register() {
               <input
                 className="reg-form__field-panel"
                 type="text"
-                name="First Name"
+                name="name"
                 placeholder="Ingresa tu primer nombre" onChange={handlerChange}
                 required
               />
@@ -49,21 +51,9 @@ function Register() {
               <input
                 className="reg-form__field-panel" onChange={handlerChange}
                 type="text"
-                name="first Surname"
+                name="lastName"
                 placeholder="Ingresa tu primer apellido"
                 required
-              />
-            </label>
-          </div>
-
-          {/* segundo apellido*/}
-          <div className="reg-form__field">
-            <label htmlFor="text">
-              <input
-                className="reg-form__field-panel" onChange={handlerChange} 
-                type="text"
-                name="second Surname"
-                placeholder="Ingresa tu segundo apellido(opcional)"
               />
             </label>
           </div>
