@@ -1,11 +1,46 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import Swal from 'sweetalert2';
+import { setProfile } from '../../../Store/profileSlice';
+import { login } from '../../../Services/Auth';
 
 import "./Login.css";
 
 const logo = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/icoMarflex_zibr1l.png";
 
 function Login() {
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const fetchData = async () => {
+    const response = await login(form.email, form.password);
+
+    const { profile, jwtoken, message } = response;
+
+    if (profile) {
+      dispatch(setProfile(profile));
+      localStorage.setItem('token', jwtoken);
+      localStorage.setItem('profile', JSON.stringify(profile));
+      Swal.fire({
+        title: message,
+        text: `Let's star organizing your ToDos!`,
+        icon: 'success',
+        confirmButtonText: `Let's go!`,
+      });
+      navigate(`/manage-board/${profile.userName}`);
+    } else {
+      Swal.fire({
+        title: message,
+        text: 'Please, check that the introduced credentials are correct.',
+        icon: 'warning',
+        confirmButtonText: 'Ok',
+      });
+    }
+  };
+
 
 
   // funciones para formulario
@@ -20,6 +55,7 @@ const handlerChange = (event) => {
 
   const handlerSumbit = (e) => {
     e.preventDefault();
+    fetchData();
     console.log("info enviada",form);
   };
 
