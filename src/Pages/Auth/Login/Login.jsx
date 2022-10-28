@@ -76,7 +76,7 @@ const handlerChange = (event) => {
             <label htmlFor="email">
               <input
                 className="log-form__field-panel" onChange={handlerChange}
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Ingresa tu email"
               />
