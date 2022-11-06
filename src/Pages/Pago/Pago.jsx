@@ -30,9 +30,6 @@ function Pago() {
     dispatch(getTotals());
   }, [cart, dispatch]);
 
-  const [total, setTotal] = useState({});
-
-  setTotal = cart.cartTotalAmount;
 
   const [factura, setFactura] = useState({});
 
@@ -45,7 +42,7 @@ function Pago() {
   const handlerSumbit = (e) => {
     e.preventDefault();
     // createFactura(factura);
-    console.log("info enviada", factura, total);
+    console.log("info enviada", factura);
   };
 
   return (
