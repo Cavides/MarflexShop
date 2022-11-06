@@ -127,7 +127,6 @@ const products = [
         image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664155337/Muebles/Sala-Cama-Fusion-Premium-Lona-Gris_STP0102-1_540x_i07lhg.webp"
     },
 
-    
     {
         id:9,
         title: "Sofa Mónaco",
@@ -176,7 +175,6 @@ const products = [
         image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664156428/Muebles/Comedor-Fusion-Nordico-5-Puestos-Lona-Palo-De-Rosa-Decorativo_CNB12901-1_540x_q5nmfe.webp"
     },
 
-    
     {
         id:12,
         title: "Comedor Bikini",
@@ -290,7 +288,6 @@ const products = [
         image: "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1664737475/Muebles/CLR3099-1_540x_f0r9jk.webp"
     },
 
-    
     {
         id:19,
         title: "Centro Marsella",

@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const products = require('./products');
 const user = require('./Users/user_routes');
+const factura = require('./Facturacion/facturacion_routes');
 const app = express();
 
 app.use(express.json());
@@ -14,7 +15,9 @@ app.get("/", (req, res) => {
     res.send("Welcome to shop API...");
 });
 
-app.use("/users", user)
+app.use("/users", user);
+
+app.use("/facturas", factura);
 
 
 

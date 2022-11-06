@@ -18,8 +18,10 @@ const mueble4 = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626273/i
 const cred = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626274/imagenes/sistecredito_opwvma.png";
 
 function Home() {
+
   return (
     <div>
+    
       {/* adjuntar link */}
       <div className="aviso">
         <p><Link className= 'navBar__navLink' to='/coberturaenvios'>Envios a más de 400 municipios en Colombia</Link> </p>

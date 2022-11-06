@@ -40,14 +40,6 @@ const facturaScheme = new Schema(
             type: String,
             require: false,
         },
-        products:{
-            type: [products],
-            required: true,
-        },
-        total:{
-            type: Number,
-            required:true,
-        },
     },
     {
         timestamps: true,

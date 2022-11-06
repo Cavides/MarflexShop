@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
-const catalogoScheme = new Schema(
+const productsScheme = new Schema(
     {
         code: {
             type: Number,
@@ -61,6 +61,6 @@ const catalogoScheme = new Schema(
     }
 )
 
-const Catalogo = model("Catalogo", catalogoScheme);
+const Products = model("Products", productsScheme);
 
-module.exports = Catalogo;
+module.exports = Products;

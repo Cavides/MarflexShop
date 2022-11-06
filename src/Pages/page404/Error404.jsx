@@ -7,6 +7,7 @@ function error404() {
   return (
     <div className="error404">
     <img src={img} ></img>
+
     </div>
   )
 }

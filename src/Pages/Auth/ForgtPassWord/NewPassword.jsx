@@ -2,8 +2,7 @@ import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import "./changepassword.css";
 
-const nombre = "Camilo";
-const apellido = "Vides";
+
 
 function NewPassword() {
 
@@ -28,13 +27,6 @@ function NewPassword() {
           <h4>Cambiar Contraseña</h4>
         </div>
 
-        {/* Username */}
-        <div className="username">
-          <h1>
-            {" "}
-            {nombre} {apellido}
-          </h1>
-        </div>
 
         <form onSubmit={handlerSumbit}>
           {/* NewPassword */}

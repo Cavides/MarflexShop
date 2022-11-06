@@ -68,7 +68,7 @@ const Cart = () => {
             <h3 className="product-title">Producto</h3>
             <h3 className="price">Precio</h3>
             <h3 className="quantity">Cantidad</h3>
-            <h3 className="total">Total</h3>
+            <h3 className="total">Subtotal</h3>
           </div>
           <div className="cart-items">
             {cart.cartItems &&
@@ -104,10 +104,10 @@ const Cart = () => {
             </button>
             <div className="cart-checkout">
               <div className="subtotal">
-                <span>Subtotal</span>
+                <span>Total</span>
                 <span className="amount">${cart.cartTotalAmount}</span>
               </div>
-              <p>Impuestos y envios no incluidos</p>
+              <p>Impuestos y envios incluidos</p>
               <button><Link to="/pago" className="navBar__navLink">Continuar con la compra</Link></button>
               <div className="continue-shopping">
                 <Link to="/products">

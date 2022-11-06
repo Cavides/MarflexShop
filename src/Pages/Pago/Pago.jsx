@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -8,6 +8,8 @@ import {
   getTotals,
   removeFromCart,
 } from "../../slices/cartSlice";
+
+import { createFactura } from "../../Services/Factura_services";
 
 import { Link } from "react-router-dom";
 
@@ -28,255 +30,265 @@ function Pago() {
     dispatch(getTotals());
   }, [cart, dispatch]);
 
-  const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
+  const [total, setTotal] = useState({});
+
+  setTotal = cart.cartTotalAmount;
+
+  const [factura, setFactura] = useState({});
+
+  const handlerChange = (event) => {
+    const key = event.target.name;
+    const value = event.target.value;
+    setFactura({ ...factura, [key]: value });
   };
-  const handleDecreaseCart = (product) => {
-    dispatch(decreaseCart(product));
+
+  const handlerSumbit = (e) => {
+    e.preventDefault();
+    // createFactura(factura);
+    console.log("info enviada", factura, total);
   };
-  const handleRemoveFromCart = (product) => {
-    dispatch(removeFromCart(product));
-  };
-  const handleClearCart = () => {
-    dispatch(clearCart());
-  };
+
   return (
     <div>
       <Header />
       <Navbar />
       <div className="all-container">
-      <div className="main-containerPago">
-        <div className="pago-form">
-          {/* title */}
-          <div className="pago-form__title">Pago de Productos</div>
+        <div className="main-containerPago">
+          <div className="pago-form">
+            {/* title */}
+            <div className="pago-form__title">Pago de Productos</div>
 
-          <div className="pago-form__subtitle">Información del comprador</div>
-          <form>
-            {/* primer nombre */}
-            <div className="pago-form__field">
-              <label htmlFor="text">
-                <input
-                  className="pago-form__field-panel"
-                  type="text"
-                  name="First Name"
-                  placeholder="Nombre"
-                  required
-                />
-              </label>
-            </div>
+            <div className="pago-form__subtitle">Información del comprador</div>
+            <form onSubmit={handlerSumbit}>
+              {/* primer nombre */}
+              <div className="pago-form__field">
+                <label htmlFor="text">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="text"
+                    name="name"
+                    placeholder="Nombre"
+                    required
+                  />
+                </label>
+              </div>
 
-            {/* primer apellido*/}
-            <div className="pago-form__field">
-              <label htmlFor="text">
-                <input
-                  className="pago-form__field-panel"
-                  type="text"
-                  name="first Surname"
-                  placeholder="Apellido"
-                  required
-                />
-              </label>
-            </div>
+              {/* primer apellido*/}
+              <div className="pago-form__field">
+                <label htmlFor="text">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="text"
+                    name="lastName"
+                    placeholder="Apellido"
+                    required
+                  />
+                </label>
+              </div>
 
-            {/* numero de identificacion*/}
-            <div className="pago-form__field">
-              <label htmlFor="text">
-                <input
-                  className="pago-form__field-panel"
-                  type="number"
-                  name="documento"
-                  placeholder="Ingresa tu numero de identificacion"
-                />
-              </label>
-            </div>
+              {/* numero de identificacion*/}
+              <div className="pago-form__field">
+                <label htmlFor="text">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="number"
+                    name="doc"
+                    placeholder="Ingresa tu numero de identificacion"
+                  />
+                </label>
+              </div>
 
-            {/* email */}
-            <div className="pago-form__field">
-              <label htmlFor="email">
-                <input
-                  className="pago-form__field-panel"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
-              </label>
-            </div>
+              {/* email */}
+              <div className="pago-form__field">
+                <label htmlFor="email">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* telefono */}
-              <label htmlFor="number">
-                <input
-                  className="pago-form__field-panel"
-                  type="number"
-                  name="telefono"
-                  placeholder="Ingresa numero de telefono"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* telefono */}
+                <label htmlFor="number">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="number"
+                    name="telephone"
+                    placeholder="Ingresa numero de telefono"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* Departamento */}
-              <label htmlFor="text">
-                <input
-                  className="pago-form__field-panel"
-                  type="text"
-                  name="Departamento"
-                  placeholder="Departamento"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* Departamento */}
+                <label htmlFor="text">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="text"
+                    name="departamento"
+                    placeholder="Departamento"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* Departamento */}
-              <label htmlFor="text">
-                <input
-                  className="pago-form__field-panel"
-                  type="text"
-                  name="Ciudad"
-                  placeholder="Ciudad"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* Departamento */}
+                <label htmlFor="text">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="text"
+                    name="ciudad"
+                    placeholder="Ciudad"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* Direccion */}
-              <label htmlFor="text">
-                <input
-                  className="pago-form__field-panel"
-                  type="text"
-                  name="direccion"
-                  placeholder="Direccion de entrega"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* Direccion */}
+                <label htmlFor="text">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="text"
+                    name="direccion"
+                    placeholder="Direccion de entrega"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* Descripcion*/}
-              <label htmlFor="text">
-                <input
-                  className="pago-form__field-panel"
-                  type="text"
-                  name="descripcion"
-                  placeholder="Descripción adicional"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* Descripcion*/}
+                <label htmlFor="text">
+                  <input
+                    className="pago-form__field-panel"
+                    onChange={handlerChange}
+                    type="text"
+                    name="descripcion"
+                    placeholder="Descripción adicional"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__subtitle">Información de pago</div>
+              <div className="pago-form__subtitle">Información de pago</div>
 
-            <div className="pago-form__image">
-              <img src={imgpago} />
-            </div>
+              <div className="pago-form__image">
+                <img src={imgpago} />
+              </div>
 
-            <div className="pago-form__field">
-              {/* nombre de tarjeta*/}
-              <label htmlFor="textr">
-                <input
-                  className="pago-form__field-panel"
-                  type="text"
-                  name="nombtarjeta"
-                  placeholder="Nombre del propietario"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* nombre de tarjeta*/}
+                <label htmlFor="textr">
+                  <input
+                    className="pago-form__field-panel"
+                    type="text"
+                    name="nombtarjeta"
+                    placeholder="Nombre del propietario"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* numero de tarjeta*/}
-              <label htmlFor="number">
-                <input
-                  className="pago-form__field-panel"
-                  type="number"
-                  name="numerotarjeta"
-                  placeholder="Numero de la tarjeta"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* numero de tarjeta*/}
+                <label htmlFor="number">
+                  <input
+                    className="pago-form__field-panel"
+                    type="number"
+                    name="numerotarjeta"
+                    placeholder="Numero de la tarjeta"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* nombre de tarjeta*/}
-              <label htmlFor="date">
-                <input
-                  className="pago-form__field-panel"
-                  type="month"
-                  name="Fechatar"
-                  placeholder="Fecha de vencimiento"
-                  required
-                />
-              </label>
-            </div>
+              <div className="pago-form__field">
+                {/* nombre de tarjeta*/}
+                <label htmlFor="date">
+                  <input
+                    className="pago-form__field-panel"
+                    type="month"
+                    name="Fechatar"
+                    placeholder="Fecha de vencimiento"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div className="pago-form__field">
-              {/* nombre de tarjeta*/}
-              <label htmlFor="number">
-                <input
-                  className="pago-form__field-panel"
-                  type="number"
-                  name="CVC"
-                  placeholder="CVC"
-                  required
-                />
-              </label>
-            </div>
-          </form>
+              <div className="pago-form__field">
+                {/* nombre de tarjeta*/}
+                <label htmlFor="number">
+                  <input
+                    className="pago-form__field-panel"
+                    type="number"
+                    name="CVC"
+                    placeholder="CVC"
+                    required
+                  />
+                </label>
+              </div>
+              {/* buttton cancelar */}
+              <Link to="/">
+                <button className="pago-form__cancelar">Cancelar</button>
+              </Link>
 
-          <Link to="/"><button className="pago-form__cancelar">Cancelar</button></Link>
-
-          {/* buttton cancelar */}
-          <button className="pago-form__comprar">Comprar</button>
+              {/* buttton comprar */}
+              <button type="submit" className="pago-form__comprar">Comprar</button>
+            </form>
+          </div>
         </div>
-      </div>
 
-      <div className="pago-form__products">
-        <div>
-          <div className="cart-items">
-            {cart.cartItems &&
-              cart.cartItems.map((cartItem) => (
-                <div className="cart-item" key={cartItem.id}>
-                  <div className="cart-product">
-                    <img src={cartItem.image} alt={cartItem.title} />
-                    <div>
-                      <h3>{cartItem.title}</h3>
-                      <button onClick={() => handleRemoveFromCart(cartItem)}>
-                        Quitar
-                      </button>
+        <div className="pago-form__products">
+          <div>
+            <div className="cart-items">
+              {cart.cartItems &&
+                cart.cartItems.map((cartItem) => (
+                  <div className="cart-item" name="products" value={cartItem.id}  key={cartItem.id} >
+                    <div className="cart-product">
+                      <img src={cartItem.image} alt={cartItem.title} />
+                      <div>
+                        <h3>{cartItem.title}</h3>
+                      </div>
+                    </div>
+                    <div className="cart-product-price">${cartItem.price}</div>
+                    <div className="cart-product-quantity">
+                    
+                      <div className="count">{cartItem.cartQuantity}</div>
+                      
+                    </div>
+                    <div
+                      className="cart-product-total-price"
+                    >
+                      ${cartItem.price * cartItem.cartQuantity}
                     </div>
                   </div>
-                  <div className="cart-product-price">${cartItem.price}</div>
-                  <div className="cart-product-quantity">
-                    <button onClick={() => handleDecreaseCart(cartItem)}>
-                      -
-                    </button>
-                    <div className="count">{cartItem.cartQuantity}</div>
-                    <button onClick={() => handleAddToCart(cartItem)}>+</button>
-                  </div>
-                  <div className="cart-product-total-price">
-                    ${cartItem.price * cartItem.cartQuantity}
-                  </div>
+                ))}
+            </div>
+            <div className="cart-summary">
+              <div className="cart-checkout">
+                <div className="subtotal">
+                  <span>Total</span>
+                  <span className="amount" name="total" >${cart.cartTotalAmount}</span>
                 </div>
-              ))}
-          </div>
-          <div className="cart-summary">
-            <button className="clear-btn" onClick={() => handleClearCart()}>
-              Limpiar carrito
-            </button>
-            <div className="cart-checkout">
-              <div className="subtotal">
-                <span>Subtotal</span>
-                <span className="amount">${cart.cartTotalAmount}</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
       </div>
 
       <Footer />

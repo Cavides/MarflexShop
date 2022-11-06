@@ -11,3 +11,5 @@ router.get('/:id', getFacturaHandler);
 router.post('/', createFacturaHandler);
 
 router.delete('/', deleteFacturaHandler);
+
+module.exports = router;
