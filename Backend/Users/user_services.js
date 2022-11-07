@@ -20,7 +20,7 @@ function getUser(id) {
   return User.findById(id);
 }
 function getUserByEmail(email) {
-  return User.find({ email: email });
+  return User.findOne({ email: email });
 }
 
 module.exports = {

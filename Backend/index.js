@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const products = require('./products');
 const user = require('./Users/user_routes');
+const email = require('./Users/user_routes');
 const factura = require('./Facturacion/facturacion_routes');
 const app = express();
 
@@ -18,6 +19,13 @@ app.get("/", (req, res) => {
 app.use("/users", user);
 
 app.use("/facturas", factura);
+
+
+
+// app.get("/users/email", (req, res) => {
+//     res.send(email);
+// });
+
 
 
 

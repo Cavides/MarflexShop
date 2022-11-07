@@ -1,14 +1,59 @@
 import React,{useState} from "react";
-import { Link } from "react-router-dom";
-import {createUser} from "../../../Services/User_services";
-
+import { Link, useNavigate } from "react-router-dom";
+import {createUser,getUserByEmail,} from "../../../Services/User_services";
+import Swal from 'sweetalert2';
 import "./register.css";
+
 
 const logo = "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/icoMarflex_zibr1l.png";
 
 function Register() {
 
   const [form, setForm] = useState({});
+  const navigate = useNavigate();
+
+  const newUser = async () => {
+    const user = await getUserByEmail(form.email);
+    
+
+    if (user.email) {
+      Swal.fire({
+        title: 'This email is already in use!',
+        text: 'Please enter a different email.',
+        icon: 'warning',
+        confirmButtonText: 'Got it!',
+      });
+    } else if (form.password !== form.rPassword) {
+      Swal.fire({
+        title: 'Password and confirm password are different!',
+        text: 'Password and confirm password must match.',
+        icon: 'warning',
+        confirmButtonText: 'Got it!',
+      });
+    } else {
+      const res = await createUser(form);
+      if (res.details) {
+        if (res.details[0].message.includes('password')) {
+          res.details[0].message = `Password needs to be at least 6 characters long and include only alphanumeric!`;
+        }
+        Swal.fire({
+          title: res.details[0].message,
+          icon: 'warning',
+          confirmButtonText: 'Got it!',
+        });
+        return;
+      }
+      Swal.fire({
+        title: 'Your account has been created!',
+        text: 'Please check your email inbox to activate your account.',
+        icon: 'success',
+        confirmButtonText: 'Got it!',
+      });
+
+      navigate('/', { replace: true });
+    }
+  };
+ 
 
   const handlerChange = (event) => {
     const key = event.target.name;
@@ -18,7 +63,7 @@ function Register() {
 
     const handlerSumbit =(e) => {
       e.preventDefault();
-      createUser(form);
+      newUser();
       console.log("info enviada",form);
     };
 
@@ -90,7 +135,7 @@ function Register() {
               <input
                 className="reg-form__field-panel" onChange={handlerChange}
                 type="password"
-                name="rpassword"
+                name="rPassword"
                 placeholder="Repite contraseña"
                 required
               />

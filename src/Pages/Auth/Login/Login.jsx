@@ -41,8 +41,6 @@ function Login() {
     }
   };
 
-
-
   // funciones para formulario
 
 const [form, setForm] = useState({});

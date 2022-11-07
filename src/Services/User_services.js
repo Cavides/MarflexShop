@@ -11,7 +11,12 @@ const createUser= async(user) =>{
         }
 };
     const newUser = await fetch(URL,options);
-    return newUser;
+    return newUser.json();
 }
 
-export {createUser};
+const getUserByEmail= async(email) => {
+    const response = await fetch(`${URL}/email/${email}`, {});
+    return response.json();  
+  }
+
+export {createUser, getUserByEmail};
