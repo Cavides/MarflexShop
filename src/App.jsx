@@ -21,6 +21,7 @@ import TyCondi from  "./Pages/TyCondi/TyCondi";
 import PoliticaDevol from "./Pages/PoliticadeDevol/PoliticaDevol";
 import  PoliticaDatos from "./Pages/PoliticadeDatos/PoliticaDatos";
 import CoberturaEnvios from "./Pages/CoberturadeEnvios/CoberturaEnvios";
+import Activation from "./Pages/Auth/Activation/Activation";
 
 import Cart from "./Components/Cart/Cart";
 
@@ -49,6 +50,7 @@ function App() {
       <Route path='/newpassword' element={<NewPassword />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/pago' element={<Pago />} />
+      <Route path='/activation' element={<Activation />} />
       </Routes>
     </BrowserRouter>
   );
