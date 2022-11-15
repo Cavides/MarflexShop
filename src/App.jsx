@@ -37,7 +37,7 @@ function App() {
       <Route path='*' element={<ErrorMessage />} />
       <Route path='/' element={<Home />} />
       <Route path='/products' element={<Products />} />
-      <Route path='/ProductDetail/:_id' element={<ProductDetail />} />
+      <Route path='products/ProductDetail/:_id' element={<ProductDetail />} />
       <Route path='/faq' element={<PreguntasFrecuentes />} />
       <Route path='/contacto' element={<Contacto />} />
       <Route path='/about' element={<About />} />

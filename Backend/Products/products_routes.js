@@ -14,7 +14,7 @@ const router = new express.Router();
 
 router.get("/", getAllProductsHandler);
 
-router.get("/:id", getProductsHandler);
+router.get("/:_id", getProductsHandler);
 
 router.post("/", createProductsHandler);
 

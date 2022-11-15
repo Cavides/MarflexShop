@@ -12,9 +12,9 @@ async function getAllProductsHandler(req,res) {
 }
 
 async function getProductsHandler(req, res){
-    const {id} = req.params;
+    const {_id} = req.params;
     try {
-        const Products = await getProducts(id);;
+        const Products = await getProducts(_id);;
         return res.status(200).json(Products);
     }catch(error) {
         console.error(error);
@@ -37,7 +37,7 @@ async function deleteProductsHandler(req, res) {
     const { id } = req.product;
   
     try {
-      await deleteProducts(id);
+      await deleteProducts(_id);
       console.log(`Product ${id} eliminated`);
       return res.status(200).json({ message: "Product eliminated" });
     } catch (error) {
@@ -48,12 +48,12 @@ async function deleteProductsHandler(req, res) {
 
   async function updateProductsHandler(req, res) {
     const ProductsUpdate = req.body;
-    const { id, code } = req.user;
+    const { _id, code } = req.user;
   
     try {
       await updateProducts(id, ProductsUpdate);
       const Products = await findUserByEmail(code);
-      console.log("User id:", id, "Data updated:", ProductsUpdate);
+      console.log("User id:", _id, "Data updated:", ProductsUpdate);
       return res
         .status(200)
         .json({ message: "Product updated", profile: Products.profile });

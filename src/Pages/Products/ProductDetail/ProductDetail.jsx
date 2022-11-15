@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
+import "./productDetail.css";
+
 import { getProduct } from '../../../Services/Products_services';
 
 function Detail() {
@@ -24,7 +26,7 @@ function Detail() {
         </div>
         <div className='detail__text'>
           <h3 className='detail__category'>{product.category}</h3>
-          <p className='detail__description'>{product.description}</p>
+          <p className='detail__description'>{product.descripcion}</p>
           <div className='detail__down'>
             <h3 className='detail__price'>{`$${product.price}`}</h3>
           </div>
