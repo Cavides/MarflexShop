@@ -3,11 +3,13 @@ const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
 
+const app = express();
+
 const products = require('./products');
 const user = require('./Users/user_routes');
-const email = require('./Users/user_routes');
+const pedido = require('./Pedidos/pedidos_routes');
 const factura = require('./Facturacion/facturacion_routes');
-const app = express();
+
 
 app.use(express.json());
 app.use(cors());
@@ -16,15 +18,11 @@ app.get("/", (req, res) => {
     res.send("Welcome to shop API...");
 });
 
+app.use("/pedidos",pedido);
+
 app.use("/users", user);
 
 app.use("/facturas", factura);
-
-
-
-// app.get("/users/email", (req, res) => {
-//     res.send(email);
-// });
 
 
 

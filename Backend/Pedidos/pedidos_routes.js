@@ -1,5 +1,5 @@
 const express = require("express"); 
-const router = require("../Users/user_routes");
+
 
 const{
     createPedidoHandler,
@@ -9,7 +9,7 @@ const{
     getAllPedidosHandler
 } = require("./pedidos_controllers"); 
 
-const router = new express.router(); 
+const router = new express.Router(); 
 
 router.get("/", getAllPedidosHandler); 
 
