@@ -15,6 +15,7 @@ import Home from "./Pages/Home/Home";
 import Products from './Pages/Products/Products';
 import Contacto from './Pages/Contacto/Contacto';
 import About from './Pages/About/About';
+import ProductDetail  from './Pages/Products/ProductDetail/ProductDetail';
 
 import PreguntasFrecuentes from "./Pages/PreguntasFrecuentes/PreguntasFrecuentes";
 import TyCondi from  "./Pages/TyCondi/TyCondi";
@@ -36,6 +37,7 @@ function App() {
       <Route path='*' element={<ErrorMessage />} />
       <Route path='/' element={<Home />} />
       <Route path='/products' element={<Products />} />
+      <Route path='/ProductDetail/:_id' element={<ProductDetail />} />
       <Route path='/faq' element={<PreguntasFrecuentes />} />
       <Route path='/contacto' element={<Contacto />} />
       <Route path='/about' element={<About />} />
