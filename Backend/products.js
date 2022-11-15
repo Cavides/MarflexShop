@@ -1,11 +1,11 @@
 const products = [
     {
-        id:1,
+        code:1,
         title: "Sofa Da Vinci",
         type: "Sofa",
         category:"Salas",
         desc:"Sofa Cama da Vinci Gris 210cm",
-        descripcion: "Tapizado: Tela Microfibra Petfriendly 100% Poliester Estructura: Madera Sajo 12% Humedad. Espuma: Espuma Alta Densidad 23 Rosada.",
+        descripcion: "Tapizado: Tela Microfibra Petfriendly 100% Poliester Estructura: Madera Sajo 12% Humedad. Espuma: Espuma Alta Denscodead 23 Rosada.",
         price: 996900,
         medidas:"Ancho: 210 cm Alto: 93 cm Profundo: 94 cm" ,
         material:"Tela",
@@ -16,7 +16,7 @@ const products = [
     },
 
     {
-        id:2,
+        code:2,
         title: "Sofa Brooke",
         type: "Sofa",
         category:"Salas",
@@ -32,7 +32,7 @@ const products = [
     },
 
     {
-        id:3,
+        code:3,
         title: "Sofa Mirano",
         type: "Sofa",
         category:"Salas",
@@ -48,7 +48,7 @@ const products = [
     },
 
     {
-        id:4,
+        code:4,
         title: "Sofa Paris",
         type: "Sofa",
         category:"Salas",
@@ -64,7 +64,7 @@ const products = [
     },
 
     {
-        id:5,
+        code:5,
         title: "Sofa Sweet",
         type: "Sofa",
         category:"Salas",
@@ -80,7 +80,7 @@ const products = [
     },
 
     {
-        id:6,
+        code:6,
         title: "Sofa Start",
         type: "Sofa",
         category:"Salas",
@@ -96,7 +96,7 @@ const products = [
     },
 
     {
-        id:7,
+        code:7,
         title: "Banqueta Colors",
         type: "Sofa",
         category:"Salas",
@@ -112,7 +112,7 @@ const products = [
     },
 
     {
-        id:8,
+        code:8,
         title: "Sala Turquía",
 	    type:"Sofa",
         category: "Salas",
@@ -128,7 +128,7 @@ const products = [
     },
 
     {
-        id:9,
+        code:9,
         title: "Sofa Mónaco",
 	    type:"Sofa",
         category: "Salas",
@@ -144,7 +144,7 @@ const products = [
     },
 
     {
-        id:10,
+        code:10,
         title: "Sofa Fenix",
 	    type:"Sofa",
         category: "Salas",
@@ -160,7 +160,7 @@ const products = [
     },
 
     {
-        id:11,
+        code:11,
         title: "Comedor Nórdico",
 	    type:"Mesa",
         category: "Comedores",
@@ -176,7 +176,7 @@ const products = [
     },
 
     {
-        id:12,
+        code:12,
         title: "Comedor Bikini",
 	    type:"Mesa",
         category: "Comedores",
@@ -192,7 +192,7 @@ const products = [
     },
 
     {
-        id:13,
+        code:13,
         title: "Comedor Brooklyn",
 	    type:"Mesa",
         category: "Comedor",
@@ -209,7 +209,7 @@ const products = [
 
     
     {
-        id:14,
+        code:14,
         title: "Comedor Dalí",
 	    type:"Mesa",
         category: "Comedores",
@@ -225,7 +225,7 @@ const products = [
     },
 
     {
-        id:15,
+        code:15,
         title: "Biblioteca Praga",
 	    type:"Biblioteca",
         category: "Salas",
@@ -241,7 +241,7 @@ const products = [
     },
 
     {
-        id:16,
+        code:16,
         title: "Biblioteca Eco",
 	    type:"Biblioteca",
         category: "Salas",
@@ -257,7 +257,7 @@ const products = [
     },
 
     {
-        id:17,
+        code:17,
         title: "Arrimo Beijing",
 	    type:"Bife",
         category: "Comedores",
@@ -273,7 +273,7 @@ const products = [
     },
 
     {
-        id:18,
+        code:18,
         title: "Centro Cantabria",
 	    type:"Muebles para Tv",
         category: "Salas",
@@ -289,7 +289,7 @@ const products = [
     },
 
     {
-        id:19,
+        code:19,
         title: "Centro Marsella",
 	    type:"Muebles para Tv",
         category: "Salas",
@@ -306,7 +306,7 @@ const products = [
 
     
     {
-        id:20,
+        code:20,
         title: "Rack Karev",
 	    type:"Muebles para Tv",
         category: "Salas",

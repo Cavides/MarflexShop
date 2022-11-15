@@ -5,7 +5,7 @@ const {
   getProductsHandler,
   createProductsHandler,
   deleteProductsHandler,
-  updateProductsHandlres,
+  updateProductsHandler,
 } = require("./Products_controllers");
 
 const { isAuthenticated } = require("../Auth/auth_services");
@@ -20,6 +20,6 @@ router.post("/", createProductsHandler);
 
 router.patch("/", isAuthenticated, updateProductsHandler);
 
-router.delete("/", isAuthenticated, deleteProductsHandler);
+router.delete("/", deleteProductsHandler);
 
 module.exports = router;

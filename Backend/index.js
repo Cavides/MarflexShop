@@ -9,6 +9,7 @@ const products = require('./products');
 const user = require('./Users/user_routes');
 const pedido = require('./Pedidos/pedidos_routes');
 const factura = require('./Facturacion/facturacion_routes');
+const producto = require("./Products/products_routes");
 
 
 app.use(express.json());
@@ -17,6 +18,8 @@ app.use(cors());
 app.get("/", (req, res) => {
     res.send("Welcome to shop API...");
 });
+
+app.use("/productos",producto);
 
 app.use("/pedidos",pedido);
 

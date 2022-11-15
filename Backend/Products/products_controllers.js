@@ -23,9 +23,9 @@ async function getProductsHandler(req, res){
 }
 
 async function createProductsHandler(req, res){
-    const {code, title, type, category, desc, descripcion, price, medidas, material, garantia, armado, recomendaciones, image} = req.body;
+    const {code, title, type, category, desc, descripcion, price, medidas, material, garantia, armado, recomendaciones, imagen} = req.body;
     try{
-        const Products = await createProducts({code, title, type, category, desc, descripcion, price, medidas, material, garantia, armado, recomendaciones, image});
+        const Products = await createProducts({code, title, type, category, desc, descripcion, price, medidas, material, garantia, armado, recomendaciones, imagen});
         return res.status(200).json(Products);
     }catch(error) {
         console.error(error);
@@ -34,7 +34,7 @@ async function createProductsHandler(req, res){
 }
 
 async function deleteProductsHandler(req, res) {
-    const { id } = req.user;
+    const { id } = req.product;
   
     try {
       await deleteProducts(id);

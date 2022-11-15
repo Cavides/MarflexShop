@@ -34,7 +34,7 @@ const productsScheme = new Schema(
             required: true,
         },
         medidas:{
-            type: Number,
+            type: String,
             required: true,
         },
         material:{
