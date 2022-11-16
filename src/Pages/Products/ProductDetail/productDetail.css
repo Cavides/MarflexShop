@@ -1,20 +1,21 @@
 .detail{
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column ;
     justify-content: center;
     min-width: 270px;
-    max-width: 1000px;
+    max-width: 1700px;
     width: 90%;
     height: 80vh;
-    background-color:rgb(255, 255, 255);
+    background-color:white;
     border-radius: 15px;
     box-shadow: 0px 1px 30px rgb(65, 65, 65);
     border-radius: 47px;
     border-radius: 47px;
-    background: #fffafa;
+    background: white;
     box-shadow:
     0.1px 0.2px 2.7px -16px rgba(0, 0, 0, 0.16),
     2.1px 2.7px 5.5px -16px rgba(0, 0, 0, 0.081),
@@ -74,4 +75,26 @@
   .detail__rating{
     display: flex;
     justify-content: space-between;
+  }
+
+  .detail__extra{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    justify-content: space-evenly;
+    margin: 50px;
+  }
+
+  .card__buttondetail{
+    border: none;
+    min-width: 80px;
+    height: 50px;
+    padding: 0 30px;
+    color: white;
+    display: inline-flex;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3b03c;
   }

@@ -9,9 +9,11 @@ import {
   removeFromCart,
 } from "../../slices/cartSlice";
 
+import Swal from 'sweetalert2';
+
 import { createFactura } from "../../Services/Factura_services";
 
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 
 import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -26,6 +28,8 @@ function Pago() {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     dispatch(getTotals());
   }, [cart, dispatch]);
@@ -39,9 +43,21 @@ function Pago() {
     setFactura({ ...factura, [key]: value });
   };
 
+  const newFactura = async () =>{
+    Swal.fire({
+      title: 'Pago Exitoso!',
+      text: 'El pago de tus productos fue procesado exitosamente.',
+      icon: 'success',
+      confirmButtonText: 'Got it!',
+    });
+    const res = await createFactura(factura);
+    navigate('/', { replace: true });
+  }
+
   const handlerSumbit = (e) => {
     e.preventDefault();
-    // createFactura(factura);
+    newFactura();
+    dispatch(clearCart());
     console.log("info enviada", factura);
   };
 
@@ -265,7 +281,7 @@ function Pago() {
                     <div className="cart-product-price">${cartItem.price}</div>
                     <div className="cart-product-quantity">
                     
-                      <div className="count">{cartItem.cartQuantity}</div>
+                      <div className="counter">  x  {cartItem.cartQuantity}</div>
                       
                     </div>
                     <div
