@@ -21,5 +21,16 @@ const getProduct = async (_id) =>{
     return await response.json();
   }
 
+  const updateProducts = async(productUpdate) => {
+    const response = await fetch(`${URL}`, {
+      method: 'PATCH',
+      body: JSON.stringify(productUpdate),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    return response.json();
+  }
 
-export {createProduct, getAllProducts, getProduct};
+
+export {createProduct, getAllProducts, getProduct, updateProducts };

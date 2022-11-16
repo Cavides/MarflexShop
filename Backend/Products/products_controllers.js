@@ -37,7 +37,7 @@ async function deleteProductsHandler(req, res) {
     const { id } = req.product;
   
     try {
-      await deleteProducts(_id);
+      await deleteProducts(id);
       console.log(`Product ${id} eliminated`);
       return res.status(200).json({ message: "Product eliminated" });
     } catch (error) {
@@ -48,12 +48,12 @@ async function deleteProductsHandler(req, res) {
 
   async function updateProductsHandler(req, res) {
     const ProductsUpdate = req.body;
-    const { _id, code } = req.user;
+    const { _id } = req.product;
   
     try {
-      await updateProducts(id, ProductsUpdate);
-      const Products = await findUserByEmail(code);
-      console.log("User id:", _id, "Data updated:", ProductsUpdate);
+      await updateProducts(_id, ProductsUpdate);
+      const Products = await findOne(_id);
+      console.log("Product id:", _id, "Data updated:", ProductsUpdate);
       return res
         .status(200)
         .json({ message: "Product updated", profile: Products.profile });
