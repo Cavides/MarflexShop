@@ -6,7 +6,7 @@ import "./styles/productDetail.css";
 
 import { getProduct } from '../../Services/Products_services';
 
-
+import AdminNavBar from '../../Components/AdminNavbar/AdminNavBar';
 
 function Detail() {
   const [product, setProduct] = useState({});
@@ -23,39 +23,148 @@ function Detail() {
     fetchData();
   }, []);
 
+  const [form, setForm] = useState({});
+
+  const handlerChange = (event) => {
+    const key = event.target.name;
+    const value = event.target.value;
+    setForm({...form, [key]: value});
+  };
+
+    const handlerSumbit =(e) => {
+      e.preventDefault();
+      console.log("info enviada",form);
+    };
+
   return (
     <div>
-
+    <AdminNavBar />
     <div className='detail'>
-      <h1 className='detail__title'>{`${product.title}`}</h1>
-      <div className='detail__info'>
-        <div className='detail__imgContainer'>
-          <img className='detail__img' src={product.imagen} />
+    <form onSubmit={handlerSumbit}>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "code"
+        value={product.code} onChange={handlerChange}
+        required
+    />
+    </label>
+
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "title"
+        value={product.title} onChange={handlerChange}
+        required
+    />
+    </label>
+
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "type"
+        value={product.type} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "category"
+        value={product.category} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "desc"
+        value={product.desc} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "descripcion"
+        value={product.descripcion} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "price"
+        value={product.price} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "medidas"
+        value={product.medidas} onChange={handlerChange}
+        required
+    />
+    </label>
+    
+    <label>
+    <input
+        className='Proudct-title'
+        name = "material"
+        value={product.material} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "garantia"
+        value={product.garantia} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "armado"
+        value={product.armado} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "recomendaciones"
+        value={product.recomendaciones} onChange={handlerChange}
+        required
+    />
+    </label>
+
+    <label>
+    <input
+        className='Proudct-title'
+        name = "imagen"
+        value={product.imagen} onChange={handlerChange}
+        required
+    />
+    </label>
+    
+    
+
+        </form>
         </div>
-        <div className='detail__text'>
-          <h3 className='detail__category'>Categoria : {product.category}</h3>
-          <p className='detail__description'>{product.descripcion}</p>
-          <div className='detail__down'>
-            <h3 className='detail__price'>Precio : {`$${product.price}`}</h3>
-          </div>
-          <div className='detail__button'>
-          
-          </div>
-        </div> 
-      </div>
-    </div>
-    <div className='detail__extra'>
-      <ul>
-      <li><h3 className='detail__extrainfo'>Medidas : {`${product.medidas}`}</h3></li>
-      <li><h3 className='detail__extrainfo'>Codigo : {`${product.code}`}</h3></li>
-      <li><h3 className='detail__extrainfo'>Material: {`${product.material}`}</h3></li>
-      <li><h3 className='detail__extrainfo'>Garatia: {`${product.garantia}`}</h3></li>
-      <li><h3 className='detail__extrainfo'>Armado: {`${product.armado}`}</h3></li>
-      <li><h3 className='detail__extrainfo'>Recomendaciones: {`${product.recomendaciones}`}</h3></li>
-      </ul>
-      </div>
-
-
     </div>
   );
 }
