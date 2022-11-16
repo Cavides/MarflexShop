@@ -38,7 +38,7 @@ app.get("/products", (req, res) => {
 
 const  port =process.env.PORT || 5000;
 
-const MURI = process.env.MONGO_URI;
+const MURI = "mongodb://Cavides:WyOLatIQEU7xvW02@ac-fq87tvw-shard-00-00.xx91jur.mongodb.net:27017,ac-fq87tvw-shard-00-01.xx91jur.mongodb.net:27017,ac-fq87tvw-shard-00-02.xx91jur.mongodb.net:27017/?ssl=true&replicaSet=atlas-ygvhyq-shard-0&authSource=admin&retryWrites=true&w=majority"
 
 
 
