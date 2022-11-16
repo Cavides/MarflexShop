@@ -35,7 +35,7 @@ function Card(props) {
       <h3 className= "card__title">${product.price}</h3>
       
       <div className='card__down'>
-        <button type="button" className="card__button" onClick={handleClick}>Detail</button>
+        <button type="button" className="card__button" onClick={handleClick}>Ver</button>
         <button type="button" className="card__button" onClick={() => handleAddToCart(product)}>Agregar a Carrito</button>
       </div>
     </div>

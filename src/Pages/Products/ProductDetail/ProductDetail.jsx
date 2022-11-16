@@ -32,6 +32,11 @@ function Detail() {
     navigate("/cart");
   };
 
+  const handleComprar = (product) =>{
+    dispatch(addToCart(product));
+    navigate("/pago");
+  }
+
   return (
     <div>
     <Header />
@@ -48,7 +53,10 @@ function Detail() {
           <div className='detail__down'>
             <h3 className='detail__price'>Precio : {`$${product.price}`}</h3>
           </div>
+          <div className='detail__button'>
+          <button type="button" className="card__buttondetail" onClick={() => handleComprar(product)}>Comprar</button>
           <button type="button" className="card__buttondetail" onClick={() => handleAddToCart(product)}>Agregar a Carrito</button> 
+          </div>
         </div> 
       </div>
     </div>

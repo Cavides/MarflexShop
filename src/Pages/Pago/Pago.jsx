@@ -271,7 +271,7 @@ function Pago() {
             <div className="cart-items">
               {cart.cartItems &&
                 cart.cartItems.map((cartItem) => (
-                  <div className="cart-item" name="products" value={cartItem.id}  key={cartItem.id} >
+                  <div className="cart-item" name="products" value={cartItem.id}  key={cartItem.code} >
                     <div className="cart-product">
                       <img src={cartItem.imagen} alt={cartItem.title} />
                       <div>
