@@ -25,9 +25,12 @@ import CoberturaEnvios from "./Pages/CoberturadeEnvios/CoberturaEnvios";
 import Activation from "./Pages/Auth/Activation/Activation";
 
 import Cart from "./Components/Cart/Cart";
-
 import Pago from './Pages/Pago/Pago';
 
+import Admin from "./Pages/Admin/Admin";
+import CatalogoAdmin from "./Pages/Admin/CatalogoAdmin";
+import Facturas from "./Pages/Admin/Facturas";
+import Pedidos from "./Pages/Admin/Pedidos";
 
 
 function App() {
@@ -53,6 +56,10 @@ function App() {
       <Route path='/cart' element={<Cart />} />
       <Route path='/pago' element={<Pago />} />
       <Route path='/activation' element={<Activation />} />
+      <Route path='/admon' element={<Admin/>} />
+      <Route path='/admonCatalogo' element={<CatalogoAdmin/>} />
+      <Route path='/facturas' element={<Facturas/>} />
+      <Route path='/pedidos' element={<Pedidos/>} />
       </Routes>
     </BrowserRouter>
   );

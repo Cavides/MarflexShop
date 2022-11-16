@@ -17,7 +17,6 @@ function Login() {
 
   const fetchData = async () => {
     const response = await login(form.email, form.password);
-
     const { profile, jwtoken, message } = response;
 
     if (profile) {
