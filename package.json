@@ -21,7 +21,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "frontend": " npm start ",
+    "backend": "cd Backend && nodemon",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  },
+  "proxy": "http://localhost:5000"
 }
