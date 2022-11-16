@@ -17,6 +17,8 @@ import Contacto from './Pages/Contacto/Contacto';
 import About from './Pages/About/About';
 import ProductDetail  from './Pages/Products/ProductDetail/ProductDetail';
 
+
+
 import PreguntasFrecuentes from "./Pages/PreguntasFrecuentes/PreguntasFrecuentes";
 import TyCondi from  "./Pages/TyCondi/TyCondi";
 import PoliticaDevol from "./Pages/PoliticadeDevol/PoliticaDevol";
@@ -31,6 +33,7 @@ import Admin from "./Pages/Admin/Admin";
 import CatalogoAdmin from "./Pages/Admin/CatalogoAdmin";
 import Facturas from "./Pages/Admin/Facturas";
 import Pedidos from "./Pages/Admin/Pedidos";
+import ProductAdmon  from './Pages/Admin/ProductsDetail';
 
 
 function App() {
@@ -41,6 +44,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/products' element={<Products />} />
       <Route path='products/ProductDetail/:_id' element={<ProductDetail />} />
+      <Route path='admonCatalogo/Product/:_id' element={<ProductAdmon />} />
       <Route path='/faq' element={<PreguntasFrecuentes />} />
       <Route path='/contacto' element={<Contacto />} />
       <Route path='/about' element={<About />} />
@@ -58,8 +62,8 @@ function App() {
       <Route path='/activation' element={<Activation />} />
       <Route path='/admon' element={<Admin/>} />
       <Route path='/admonCatalogo' element={<CatalogoAdmin/>} />
-      <Route path='/facturas' element={<Facturas/>} />
-      <Route path='/pedidos' element={<Pedidos/>} />
+      {/* <Route path='/facturas' element={<Facturas/>} />
+      <Route path='/pedidos' element={<Pedidos/>} /> */}
       </Routes>
     </BrowserRouter>
   );

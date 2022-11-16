@@ -38,6 +38,16 @@
 		font-size: 25px;
 		cursor: pointer;
 	}
+	
+	.logo_Admin img{
+		width: 70px;
+		height: auto;
+		margin-left: -150%;
+	}
+
+
+
+
 	.logo_Admin h1{
 		color: black;
 		font-weight: 400;
