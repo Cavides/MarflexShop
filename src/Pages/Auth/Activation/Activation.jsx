@@ -5,6 +5,8 @@ import Swal from 'sweetalert2';
 import { verifyAccount } from '../../../Services/Auth';
 import { setProfile } from '../../../Store/profileSlice';
 
+import "./activation.css";
+
 function ActivateAccount() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -43,7 +45,7 @@ function ActivateAccount() {
       <div className='activateAccount__container'>
         <div className='ActivateAccount__image'>
           <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Trello-logo-blue.svg/2560px-Trello-logo-blue.svg.png'
+            src="https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/icoMarflex_zibr1l.png"
             alt='frello logo'
             className='ActivateAccount__logo'
           />
@@ -58,16 +60,6 @@ function ActivateAccount() {
         </button>
       </div>
       <div className='activateAccount__footer__img'>
-        <img
-          className='activateAccount__footer__img1'
-          src='..\img\logSing__footer__img1.png'
-          alt=''
-        />
-        <img
-          className='activateAccount__footer__img2'
-          src='..\img\logSing__footer__img2.png'
-          alt=''
-        />
       </div>
     </div>
   );

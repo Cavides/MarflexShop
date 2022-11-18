@@ -7,8 +7,7 @@ import Navbar from "../Navbar/Navbar";
 
 const logo =
   "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/icoMarflex_zibr1l.png";
-const carrito =
-  "https://res.cloudinary.com/ds9rxxr5l/image/upload/v1661626272/imagenes/carrito_okck8g.png";
+
 
 function Header() {
   const { cartTotalQuantity } = useSelector((state) => state.cart);
